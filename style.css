@@ -774,6 +774,7 @@ max-width: 182px;
 .sliderImgs img{
   width: 100%;
   height: auto;
+  object-fit: contain;
 }
 @media (max-width:440px){
   .sliderImgs{
@@ -984,4 +985,21 @@ color: rgba(243, 190, 70, 1);
 font-size: 16px;
 font-family: expofont;
 text-decoration: none;
+}
+.page{
+  margin: 20px 0px ;
+  padding: 0px 12px;
+}
+.page  h1 {
+  font-size: 26px;
+  font-family: expofontbold;
+  text-align: start;
+  direction: rtl;
+}
+.page p{ font-size: 18px; 
+  font-family: expofont;
+}
+.page li {
+  font-size: 18px; 
+  font-family: expofont;
 }
