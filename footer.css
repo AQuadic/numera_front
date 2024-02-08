@@ -66,10 +66,11 @@ footer .quick-links a {
     margin-block: 6px;
     text-decoration: none;
     color: white;
+    font-family: expofont;
 }
 footer .quick-links {
     width: 100px;
-    text-align: left;
+
 }
 
 hr {
@@ -85,15 +86,17 @@ footer .copy_rights
     display: flex;
     justify-content: space-between;
 }
-footer .developed_by
-{
+footer .developed_by {
     position: relative;
     padding-block: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 .developed_by p
 {
-    text-align: right;
-    position: absolute;
-    margin: 0;
-    right: 40px;
+    font-family: expofont;
+    text-align: end;  
+     margin: 0;
+    width: 60px;
 }
