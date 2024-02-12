@@ -47,49 +47,48 @@
           <div class="swiper-slide">
             <a href="">
               <img
-              id="ad-img"
-              src="./images/dubai-number-plate-auction 2.png"
-              alt="dubai-number-plate"
-            />
+                id="ad-img"
+                src="./images/dubai-number-plate-auction 2.png"
+                alt="dubai-number-plate"
+              />
             </a>
           </div>
           <div class="swiper-slide">
-             <a href="">
+            <a href="">
               <img
-              id="ad-img"
-              src="./images/dubai-number-plate-auction 2.png"
-              alt="dubai-number-plate"
-            />
-             </a>
+                id="ad-img"
+                src="./images/dubai-number-plate-auction 2.png"
+                alt="dubai-number-plate"
+              />
+            </a>
           </div>
           <div class="swiper-slide">
-             <a href="">
+            <a href="">
               <img
-              id="ad-img"
-              src="./images/dubai-number-plate-auction 2.png"
-              alt="dubai-number-plate"
-            />
-             </a>
+                id="ad-img"
+                src="./images/dubai-number-plate-auction 2.png"
+                alt="dubai-number-plate"
+              />
+            </a>
           </div>
           <div class="swiper-slide">
-             <a href="">
+            <a href="">
               <img
-              id="ad-img"
-              src="./images/dubai-number-plate-auction 2.png"
-              alt="dubai-number-plate"
-            />
-             </a>
+                id="ad-img"
+                src="./images/dubai-number-plate-auction 2.png"
+                alt="dubai-number-plate"
+              />
+            </a>
           </div>
           <div class="swiper-slide">
-             <a href="">
+            <a href="">
               <img
-              id="ad-img"
-              src="./images/dubai-number-plate-auction 2.png"
-              alt="dubai-number-plate"
-            />
-             </a>
+                id="ad-img"
+                src="./images/dubai-number-plate-auction 2.png"
+                alt="dubai-number-plate"
+              />
+            </a>
           </div>
-          
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -100,16 +99,17 @@
       <a id="car-numbers" href="https://example.com">لوحات الزوار </a>
     </div>
     <div class="fillter">
-      <div class="content">
+      <div class="content partsFillter">
         <div class="part1">
           <img src="./images/fillter.png" class="imgFillter" alt="Fillter" />
-          <h4>فلتر</h4>
+          <h4>فلترة اللوحات</h4>
         </div>
-        <div class="parts">
+        <div class="parts ">
           <div class="part">
             <div class="form-group">
               <select class="form-control">
-                <option selected>جميع الإمارات</option>
+                <option selected>اختر الإمارة</option>
+                <option>جميع الإمارات</option>
                 <option>دبي</option>
                 <option>ابوظبي</option>
                 <option>دبي</option>
@@ -120,7 +120,8 @@
           <div class="part">
             <div class="form-group">
               <select class="form-control">
-                <option selected>جميع الفئات</option>
+                <option selected>الفئة</option>
+                <option>جميع الفئات</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -128,39 +129,74 @@
               </select>
             </div>
           </div>
-
           <div class="part">
             <div class="form-group">
               <select class="form-control">
-                <option selected>الرقم</option>
-                <option>1522</option>
-                <option>275</option>
-                <option>1522</option>
-                <option>275</option>
+                <option selected>جميع الأرقام</option>
+
+                <option>1 أرقام</option>
+                <option>2 أرقام</option>
+                <option>3 أرقام</option>
+                <option>4 أرقام</option>
               </select>
             </div>
           </div>
-          <div class="part">
+          <div class="part more">
             <div class="form-group">
-              <input type="text" placeholder="يتضمن: مثال:900 " value="810" />
+              <input type="text" placeholder="يتضمن : مثال 700" />
             </div>
           </div>
-
-          <div class="part">
+          <div class="part more">
             <div class="form-group">
               <input type="text" placeholder="أعلى سعر" />
             </div>
           </div>
-          <div class="part">
+          <div class="part more">
             <div class="form-group">
               <input type="text" placeholder="اقل سعر" />
             </div>
           </div>
+          <div class="part more">
+            <div class="form-group">
+              <input type="text" placeholder="يبدأ بـ : مثال 123" />
+            </div>
+          </div>
+          <div class="part more">
+            <div class="form-group">
+              <input type="text" placeholder="ينتهي بـ : مثال 222" />
+            </div>
+          </div>
+          <div class="part more">
+            <div class="form-group">
+              <select class="form-control">
+                <option selected>تنسيق الرقم</option>
+                <option>أي تنسيق</option>
+                <option>يتضمن رقم مكرر 2 مرات</option>
+                <option>يتضمن رقم مكرر 3 مرات</option>
+                <option>يتضمن رقم مكرر 4 مرات</option>
+                <option>x???x (5 أرقام)</option>
+              </select>
+            </div>
+          </div>
+          <div class="btnSearch">
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.375 23.1378L17.767 16.5298C19.355 14.6234 20.1468 12.1783 19.9779 9.70296C19.8089 7.22764 18.6921 4.91276 16.8599 3.23987C15.0276 1.56698 12.6209 0.66488 10.1405 0.72124C7.66007 0.777601 5.29685 1.78808 3.54246 3.54246C1.78808 5.29685 0.777601 7.66007 0.72124 10.1405C0.66488 12.6209 1.56698 15.0276 3.23987 16.8599C4.91276 18.6921 7.22764 19.8089 9.70296 19.9779C12.1783 20.1468 14.6234 19.355 16.5298 17.767L23.1378 24.375L24.375 23.1378ZM2.50004 10.375C2.50004 8.81751 2.9619 7.29496 3.82722 5.99992C4.69253 4.70489 5.92244 3.69553 7.36141 3.09949C8.80038 2.50345 10.3838 2.3475 11.9114 2.65136C13.439 2.95521 14.8422 3.70524 15.9435 4.80657C17.0448 5.90791 17.7949 7.3111 18.0987 8.8387C18.4026 10.3663 18.2466 11.9497 17.6506 13.3887C17.0546 14.8276 16.0452 16.0575 14.7502 16.9229C13.4551 17.7882 11.9326 18.25 10.375 18.25C8.28717 18.2477 6.28548 17.4173 4.80913 15.9409C3.33279 14.4646 2.50236 12.4629 2.50004 10.375Z"
+                fill="#EBAF29"
+              />
+            </svg>
+
+            <input type="submit" value="بحث" />
+          </div>
         </div>
 
-        <div class="btnSearch">
-          <input type="submit" value="بحث" />
-        </div>
+        <button class="showMore" id="toggleBtn">+ خيارات أكثر</button>
       </div>
     </div>
     <div class="container">
@@ -169,7 +205,11 @@
           <div class="carInfo">
             <img src="./images/1.png" alt="first_car" class="imgCar" />
             <div class="svgNum">
-              <iframe src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi" style="width: 100%;height: 88px;" frameborder="0"></iframe>
+              <iframe
+                src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi"
+                style="width: 100%; height: 88px"
+                frameborder="0"
+              ></iframe>
             </div>
             <div class="featuresCar">
               <p class="pNew">جديد</p>
@@ -180,12 +220,12 @@
           <div class="carDetails">
             <div class="details part">
               <p>فئة : خصوصي</p>
-              <p>كود : <span class="boldSpan">H</span> </p>
+              <p>كود : <span class="boldSpan">H</span></p>
               <p>رقم : <span class="boldSpan numCar">73774</span></p>
             </div>
             <div class="price part">
               <p>السعر</p>
-              <p class="currency ">10.900</p>
+              <p class="currency">10.900</p>
               <p>درهم</p>
             </div>
             <div class="star">
@@ -207,7 +247,11 @@
           <div class="carInfo">
             <img src="./images/1.png" alt="first_car" class="imgCar" />
             <div class="svgNum">
-              <iframe src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi" style="width: 100%;height: 88px;" frameborder="0"></iframe>
+              <iframe
+                src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi"
+                style="width: 100%; height: 88px"
+                frameborder="0"
+              ></iframe>
             </div>
             <div class="featuresCar">
               <p class="pNew">جديد</p>
@@ -218,12 +262,12 @@
           <div class="carDetails">
             <div class="details part">
               <p>فئة : خصوصي</p>
-              <p>كود : <span class="boldSpan">H</span> </p>
+              <p>كود : <span class="boldSpan">H</span></p>
               <p>رقم : <span class="boldSpan numCar">73774</span></p>
             </div>
             <div class="price part">
               <p>السعر</p>
-              <p class="currency ">10.900</p>
+              <p class="currency">10.900</p>
               <p>درهم</p>
             </div>
             <div class="star">
@@ -245,7 +289,11 @@
           <div class="carInfo">
             <img src="./images/1.png" alt="first_car" class="imgCar" />
             <div class="svgNum">
-              <iframe src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi" style="width: 100%;height: 88px;" frameborder="0"></iframe>
+              <iframe
+                src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi"
+                style="width: 100%; height: 88px"
+                frameborder="0"
+              ></iframe>
             </div>
             <div class="featuresCar">
               <p class="pNew">جديد</p>
@@ -256,12 +304,12 @@
           <div class="carDetails">
             <div class="details part">
               <p>فئة : خصوصي</p>
-              <p>كود : <span class="boldSpan">H</span> </p>
+              <p>كود : <span class="boldSpan">H</span></p>
               <p>رقم : <span class="boldSpan numCar">73774</span></p>
             </div>
             <div class="price part">
               <p>السعر</p>
-              <p class="currency ">10.900</p>
+              <p class="currency">10.900</p>
               <p>درهم</p>
             </div>
             <div class="star">
@@ -283,7 +331,11 @@
           <div class="carInfo">
             <img src="./images/1.png" alt="first_car" class="imgCar" />
             <div class="svgNum">
-              <iframe src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi" style="width: 100%;height: 88px;" frameborder="0"></iframe>
+              <iframe
+                src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi"
+                style="width: 100%; height: 88px"
+                frameborder="0"
+              ></iframe>
             </div>
             <div class="featuresCar">
               <p class="pNew">جديد</p>
@@ -294,12 +346,12 @@
           <div class="carDetails">
             <div class="details part">
               <p>فئة : خصوصي</p>
-              <p>كود : <span class="boldSpan">H</span> </p>
+              <p>كود : <span class="boldSpan">H</span></p>
               <p>رقم : <span class="boldSpan numCar">73774</span></p>
             </div>
             <div class="price part">
               <p>السعر</p>
-              <p class="currency ">10.900</p>
+              <p class="currency">10.900</p>
               <p>درهم</p>
             </div>
             <div class="star">
@@ -318,8 +370,6 @@
           </div>
         </div>
       </div>
-
-   
     </div>
     <div class="container">
       <div class="cars">
@@ -327,7 +377,11 @@
           <div class="carInfo">
             <img src="./images/1.png" alt="first_car" class="imgCar" />
             <div class="svgNum">
-              <iframe src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi" style="width: 100%;height: 88px;" frameborder="0"></iframe>
+              <iframe
+                src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi"
+                style="width: 100%; height: 88px"
+                frameborder="0"
+              ></iframe>
             </div>
             <div class="featuresCar">
               <p class="pNew">جديد</p>
@@ -338,12 +392,12 @@
           <div class="carDetails">
             <div class="details part">
               <p>فئة : خصوصي</p>
-              <p>كود : <span class="boldSpan">H</span> </p>
+              <p>كود : <span class="boldSpan">H</span></p>
               <p>رقم : <span class="boldSpan numCar">73774</span></p>
             </div>
             <div class="price part">
               <p>السعر</p>
-              <p class="currency ">10.900</p>
+              <p class="currency">10.900</p>
               <p>درهم</p>
             </div>
             <div class="star">
@@ -365,7 +419,11 @@
           <div class="carInfo">
             <img src="./images/1.png" alt="first_car" class="imgCar" />
             <div class="svgNum">
-              <iframe src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi" style="width: 100%;height: 88px;" frameborder="0"></iframe>
+              <iframe
+                src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi"
+                style="width: 100%; height: 88px"
+                frameborder="0"
+              ></iframe>
             </div>
             <div class="featuresCar">
               <p class="pNew">جديد</p>
@@ -376,12 +434,12 @@
           <div class="carDetails">
             <div class="details part">
               <p>فئة : خصوصي</p>
-              <p>كود : <span class="boldSpan">H</span> </p>
+              <p>كود : <span class="boldSpan">H</span></p>
               <p>رقم : <span class="boldSpan numCar">73774</span></p>
             </div>
             <div class="price part">
               <p>السعر</p>
-              <p class="currency ">10.900</p>
+              <p class="currency">10.900</p>
               <p>درهم</p>
             </div>
             <div class="star">
@@ -400,8 +458,6 @@
           </div>
         </div>
       </div>
-
-   
     </div>
     <div class="nextContent">
       <button href="" class="next">
@@ -490,6 +546,16 @@
     <script src="./js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script>
+      document.getElementById("toggleBtn").addEventListener("click", function() {
+          var section = document.querySelector(".partsFillter");
+          if (section.classList.contains("showMorePart")) {
+              section.classList.remove("showMorePart");
+          } else {
+              section.classList.add("showMorePart");
+          }
+      });
+      </script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
