@@ -32,13 +32,25 @@
     <nav class="navbar">
       <div class="nav">
         <img id="logo" src="./images/logo.svg" alt="Nemra" />
-        <img
-          id="menu"
-          src="./images/iconamoon_menu-burger-horizontal-fill.svg"
-          alt="menu"
-        />
+        <button class="menu" id="menu">
+            <img
+            id="menu"
+            src="./images/iconamoon_menu-burger-horizontal-fill.svg"
+            alt="menu"
+          />
+        </button>
+      <div class="menuParts none ">
+        <a href="" class="navLink"> الصفحة الرئيسية</a>
+        <a href="" class="navLink">عن نمرة</a>
+        <a href="" class="navLink">اللوحات</a>
+        <a href="" class="navLink">بيع رقمك</a>
+        <a href="" class="navLink">رسم الأرقام</a>
+        <a href="" class="navLink">الأسئلة المتكررة</a>
+        <a href="" class="navLink">الشروط والأحكام</a>
+        <a href="" class="navLink">التواصل</a>
       </div>
-      <div class="dropdown"></div>
+      </div>
+    
     </nav>
 
     <div class="sliderImgs">
@@ -558,6 +570,16 @@
           }
       });
       </script>
+      <script>
+        document.getElementById("menu").addEventListener("click", function() {
+            var section = document.querySelector(".menuParts");
+            if (section.classList.contains("none")) {
+                section.classList.remove("none");
+            } else {
+                section.classList.add("none");
+            }
+        });
+        </script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
