@@ -2,6 +2,7 @@
 
 footer p {
     margin: 3px 0;
+    font-family: expofont;
 }
 footer
 {
@@ -16,7 +17,9 @@ footer
     max-width: 100%;
     direction: rtl;
 }
-
+footer p span{
+    direction: ltr;
+}
 footer .footer-container
 {
     display: flex;
@@ -55,11 +58,11 @@ footer .footer-container .social-links a:nth-child(3)::before
 footer .footer-container .contact-details
 {
     display: block;
-    text-align: left;
+ 
 }
 footer .footer-container #address {
     margin-block: 10px;
-
+    font-family: expofont;
 }
 footer .quick-links a {
     display: block;
@@ -69,8 +72,13 @@ footer .quick-links a {
     font-family: expofont;
 }
 footer .quick-links {
-    width: 100px;
+    width: 116px;
 
+}
+footer .quick-links h4 {
+    width: 100px;
+    font-family: expofontBold;
+    font-size: 20px;
 }
 
 hr {
