@@ -11,6 +11,7 @@ body {
 body{
   max-width: 430px;
   margin: auto;
+  padding-top: 80px;
 }
 @font-face {
   font-family: BebasKai;
@@ -790,7 +791,7 @@ max-width: 182px;
 .sliderImgs {
   width: 388px;
   margin: auto;
-  margin-top: 80px;
+ 
 }
 .sliderImgs .swiper-horizontal {
   touch-action: pan-y;
@@ -1168,4 +1169,333 @@ position: relative;
 .carsNew .cardNew .contactCar a img {
   height: 11px;
   width: auto;
+}
+/*con*/
+.con{
+  padding: 0px 22px ;
+  margin-top: 20px;
+}
+/*about*/
+.about{
+  margin: 10px auto 14px;
+}
+.about h1{
+  color: #192540;
+  font-size: 24px;
+  margin-bottom: 4px;
+  text-align: center;
+  font-family: expofontBold;
+}
+.about h2{
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: expofont;
+
+}
+/*step*/
+.step{
+  width: 100%;
+  background-color: #192540;
+  color: #EBAF29;
+  text-align: center;
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-family: expofont;
+margin-bottom: 4px;
+font-size: 15px;
+}
+/*flaps*/
+.flaps{
+  direction: rtl;
+}
+.flaps .headFlaps{
+  background-color: #EBAF29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-radius: 6px;
+  padding: 4px 10px;
+  height: 46px;
+  margin-bottom: 12px;
+}
+.flaps .headFlaps h2{
+  font-size: 15px;
+  font-family: expofont;
+  font-weight: 700;
+color: #192540;
+margin: 0;
+}
+.flaps .headFlaps button{
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.flaps .headFlaps button svg{
+  width: 30px;
+  height: 30px;
+}
+.flaps .allFlaps{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.flaps .allFlaps .flap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flaps .allFlaps .flap .part{
+  width: 86px;
+}
+.flaps .allFlaps .flap .part.code{ 
+  width: 64px;
+}
+.flaps .allFlaps .flap .part .form-group {
+  width: 100%;
+  height: 34px;
+  min-height: 34px;
+}
+.flaps .allFlaps .flap .part .form-group .form-control {
+  min-height: 34px;
+  height: 34px;
+  font-size: 14px;
+  color: #6D6E70;
+  box-shadow: none;
+  font-family: expofont;
+  border: none;
+  font-weight: 600;
+}
+.flaps .allFlaps .flap .part input {
+  max-width: 100%;
+  border: none;
+  height: 34px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: expofont;
+  color: #6D6E70;
+  font-weight: 600;
+  outline: none;
+  padding: 0px 6px;
+}
+.flaps .allFlaps .flap .part input::placeholder {
+  font-family: expofont;
+
+  font-weight: 600;
+  font-size: 14px;
+  color: #6D6E70;
+
+}
+.flaps .allFlaps .flap .delete{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  border: 3px solid red;
+  background: transparent;
+}
+.flaps .allFlaps .flap .delete p {
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 7px;
+  color: red;
+  font-weight: 700;
+  font-family: cursive;
+}
+.flaps .allFlaps .flap:first-of-type .delete{
+  display: none;
+}
+/*stepTwo*/
+.stepTwo{
+  margin-bottom: 200px;
+  direction: rtl;
+}
+.stepTwo .part{
+  margin-bottom: 16px;
+  margin-top: 22px;
+}
+.stepTwo .part label{
+  font-size: 15px;
+  font-family: expofont;
+margin-bottom: 4px;
+color: black;
+font-weight: 600;
+}
+.stepTwo .part input{
+  width: 100%;
+  height: 34px;
+  border: none;
+  border-radius: 6px;
+  font-family: expofont;
+  font-weight: 600;
+  font-size: 14px;
+  color: #192540;
+  padding: 8px 10px;
+ outline: none;
+}
+.stepTwo .part input::placeholder{
+  font-family: expofont;
+
+  font-weight: 600;
+  font-size: 14px;
+  color: #6D6E70;
+}
+.stepTwo label{
+  font-size: 15px;
+  font-family: expofont;
+margin-bottom: 4px;
+color: black;
+font-weight: 600;
+}
+.stepTwo .backGround{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 16px;
+}
+.stepTwo .backGround button{
+  flex: 1;
+  height: 34px;
+  border-radius: 5px;
+  padding: 8px 10px;
+  border: none;
+  font-size: 15px;
+  font-family: expofont;
+  text-align: start;
+  font-weight: 600;
+}
+.stepTwo .backGround .light{
+  background-color: white;
+  color: #6D6E70;
+ border: 1px solid;
+}
+.stepTwo .backGround .dark{
+  background-color: black;
+  color: white;
+} 
+.stepTwo  .colors{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.stepTwo  .colors button{
+  width: 70px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.stepTwo  .colors button.active{
+  border: 2px solid black;
+}
+.stepTwo .upLoadImg{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 80px;
+  width: 100%;
+  background-color: #192540;
+  border-radius: 6px;
+}
+.stepTwo .upLoadImg p{
+  color: #EBAF29;
+  font-size: 32px;
+  margin: 0;
+  font-family: expofont;
+
+}
+.stepTwo .upLoadImg svg{
+  width: 40px;
+  height: 40px;
+}
+.stepTwo .upLoadImg .LoadInput{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/*shap*/
+.shap{
+  position: relative;
+  width: 380px;
+  height: 380px;
+  margin-bottom: 26px;
+  direction: rtl;
+}
+.shap .imgShap{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: black;
+}
+.shap .info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 290px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.shap .info .svgImg {
+  height: 70px;
+}
+.shap .info .svgImg svg{}
+.shap .info h3{
+  color: white;
+  font-size: 42px;
+  margin: 0;
+  direction: ltr;
+    letter-spacing: -2px;
+}
+.shap .contactShap{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+background-color: #E50000;
+padding: 10px;
+z-index: 50;
+}
+.shap .contactShap h4{
+  font-size: 15px;
+  color: white;
+  font-family: expofont;
+margin: 0;
+}
+.shap .contactShap p{
+  direction: ltr;
+  font-size: 15px;
+  color: white;
+  margin: 0;
+  font-family: expofont;
+
 }
