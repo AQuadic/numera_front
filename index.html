@@ -29,29 +29,61 @@
     <title>Car Services</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav">
-        <img id="logo" src="./images/logo.svg" alt="Nemra" />
-        <button class="menu" id="menu">
-            <img
-            id="menu"
-            src="./images/iconamoon_menu-burger-horizontal-fill.svg"
-            alt="menu"
-          />
-        </button>
-      <div class="menuParts none ">
-        <a href="" class="navLink"> الصفحة الرئيسية</a>
-        <a href="" class="navLink">عن نمرة</a>
-        <a href="" class="navLink">اللوحات</a>
-        <a href="" class="navLink">بيع رقمك</a>
-        <a href="" class="navLink">رسم الأرقام</a>
-        <a href="" class="navLink">الأسئلة المتكررة</a>
-        <a href="" class="navLink">الشروط والأحكام</a>
-        <a href="" class="navLink">التواصل</a>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="./images/logo.svg" alt="Nemra"/>
+        </a>
+          
+       
+        <div class="navbar-toggler2">
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="navLink"> الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="navLink">عن نمرة</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="navLink">اللوحات</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="navLink">بيع رقمك</a>
+            </li>
+            <li class="nav-item">
+              <a href="art.html" class="navLink">رسم الأرقام</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="navLink">الأسئلة المتكررة</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="navLink">الشروط والأحكام</a>
+            </li>
+            <li class="nav-item">
+              <a href="contactUs.html" class="navLink">التواصل</a>
+            </li>
+          </ul>
+        
+        </div>
       </div>
-      </div>
-    
     </nav>
+   
 
     <div class="sliderImgs">
       <div class="swiper mySwiper">
@@ -105,10 +137,10 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-<div class="about">
-  <h1>بيع وشراء لوحات المركبات</h1>
-  <h2>بخطوات بسيطة وتحويل فوري اونلاين</h2>
-</div>
+    <div class="about">
+      <h1>بيع وشراء لوحات المركبات</h1>
+      <h2>بخطوات بسيطة وتحويل فوري اونلاين</h2>
+    </div>
     <div id="numbers">
       <a id="bike-numbers" href="https://example.com">لوحات نُمرة </a>
       <a id="car-numbers" href="https://example.com">لوحات الزوار </a>
@@ -119,7 +151,7 @@
           <img src="./images/fillter.png" class="imgFillter" alt="Fillter" />
           <h4>فلترة اللوحات</h4>
         </div>
-        <div class="parts ">
+        <div class="parts">
           <div class="part">
             <div class="form-group">
               <select class="form-control">
@@ -139,7 +171,6 @@
                 <option>جميع الفئات</option>
                 <option>مركبات</option>
                 <option>دراجات</option>
-              
               </select>
             </div>
           </div>
@@ -561,25 +592,32 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-      document.getElementById("toggleBtn").addEventListener("click", function() {
+      document
+        .getElementById("toggleBtn")
+        .addEventListener("click", function () {
           var section = document.querySelector(".partsFillter");
+
           if (section.classList.contains("showMorePart")) {
-              section.classList.remove("showMorePart");
+            section.classList.remove("showMorePart");
           } else {
-              section.classList.add("showMorePart");
+            section.classList.add("showMorePart");
           }
-      });
-      </script>
-      <script>
-        document.getElementById("menu").addEventListener("click", function() {
-            var section = document.querySelector(".menuParts");
-            if (section.classList.contains("none")) {
-                section.classList.remove("none");
-            } else {
-                section.classList.add("none");
-            }
         });
-        </script>
+    </script>
+    <script>
+      document.getElementById("menu").addEventListener("click", function () {
+        var section = document.querySelector(".menu2");
+        section.classList.toggle("collapsed");
+      });
+      document.getElementById("menu").addEventListener("click", function () {
+        var section = document.querySelector(".menuParts");
+        if (section.classList.contains("none")) {
+          section.classList.remove("none");
+        } else {
+          section.classList.add("none");
+        }
+      });
+    </script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {

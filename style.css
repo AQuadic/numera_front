@@ -805,6 +805,7 @@ max-width: 182px;
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 10px;
 }
 @media (max-width:440px){
   .sliderImgs{
