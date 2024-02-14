@@ -1438,7 +1438,7 @@ gap: 16px;
 .shap{
   position: relative;
   width: 380px;
-  height: 380px;
+  height: 540px;
   margin-bottom: 26px;
   direction: rtl;
 }
@@ -1450,27 +1450,36 @@ gap: 16px;
 }
 .shap .info {
   position: absolute;
-  top: 50%;
+  top: calc(50% - 28px);
   left: 50%;
   transform: translate(-50%,-50%);
-  max-width: 290px;
-  width: 290px;
+  width: 94%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shap .info .part1{
+  display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
+}
+.shap .info .part {
+  max-width: 240px;
 }
 
+
 .shap .info .svgImg {
-  height: 70px;
+  height: 60px;
+  margin-bottom: 4px;
 }
 .shap .info .svgImg svg{}
 .shap .info h3{
   color: white;
-  font-size: 42px;
+  font-size: 22px;
   margin: 0;
-  direction: ltr;
     letter-spacing: -2px;
 }
 .shap .contactShap{
@@ -1499,4 +1508,33 @@ margin: 0;
   margin: 0;
   font-family: expofont;
 
+}
+.shap .comment{
+  position: absolute;
+  bottom: 44px;
+  width: 100%;
+
+}
+.shap .comment p{
+  font-size: 15px;
+  color: white;
+  padding: 0px 12px ;
+  font-family: expofont;
+text-align: end;
+margin: 0;
+}
+
+
+.shap .info.twoPart {
+  gap: 20px;
+  align-items: flex-start;
+}
+.shap .info.twoPart .part1{}
+.shap .info.twoPart .part1 .part{}
+.shap .info.twoPart .part1 .part .svgImg{
+  height: 44px;
+}
+.shap .info.twoPart .part1 .part .svgImg iframe{}
+.shap .info.twoPart .part1 .part h3{
+  font-size: 18px;
 }
