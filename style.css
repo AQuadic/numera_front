@@ -851,6 +851,12 @@ max-width: 182px;
     align-items: center;
     justify-content: center;
 }
+.carsNew .cardNew .carInfo .svgNum.bike {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  bottom: auto;
+}
 .cars .cardNew .carInfo .featuresCar{
   display: flex;
   flex-direction: column;
