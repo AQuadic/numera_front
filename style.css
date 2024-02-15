@@ -1443,10 +1443,22 @@ gap: 16px;
   direction: rtl;
 }
 .shap .imgShap{
+  position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
   background-color: black;
+}
+.shap .imgShap::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./images/back.png');
+  background-size: cover;
+  
+}
+.shap .imgShap.white::before{
+  opacity: 40%;
 }
 .shap .info {
   position: absolute;
