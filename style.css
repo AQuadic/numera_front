@@ -1143,6 +1143,7 @@ position: relative;
 .carsNew .cardNew .carDetails .price .currency{
   font-family: expofontBold;
   font-size: 17px;
+  height: 18px;
 }
 .carsNew .cardNew .carDetails .star {
   position: absolute;
