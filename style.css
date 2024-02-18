@@ -1402,6 +1402,7 @@ gap: 16px;
   height: 35px;
   border-radius: 5px;
   border: 1px solid;
+  flex: 1;
 }
 .stepTwo  .colors button.active{
   border: 2px solid black;
