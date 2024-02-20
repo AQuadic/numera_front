@@ -1557,19 +1557,23 @@ margin: 0;
 .shap .info.twoPart .part1 .part h3{
   font-size: 18px;
 }
-.topBtn{
+.topBtn {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 14px 0px;
+  position: fixed;
+  bottom: 44px;
+  right: 30px;
+  z-index: 50000;
 }
-.topBtn button{
+.topBtn button {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #EBAF29;
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   padding: 4px;
   border-radius: 50%;
   border: none;
