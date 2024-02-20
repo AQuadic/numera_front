@@ -1597,17 +1597,21 @@ margin: 0;
   height: 38px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .paginationBox .page-item span{
   color: #1b2541;
  }
 .paginationBox .page-item .page-link{
   background-color: #EBAF29;
-  border: 1px solid #ffefbf;
+  border: none;
     border-radius: 0px;
   color: #1b2541;
 transition: 0.3s;
+border-right: 1px solid #fdefbd;
+}
+.paginationBox .page-item.active{
+  background-color: #1b2541;
+
 }
 .paginationBox .page-item.active .page-link{
   color: white;
@@ -1629,4 +1633,5 @@ transition: 0.3s;
 }
 .paginationBox .pagination .page-item:last-of-type .page-link{
   border-radius: 0px 8px 8px 0px;
+  border: none;
 }
