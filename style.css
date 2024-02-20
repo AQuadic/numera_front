@@ -1557,3 +1557,58 @@ margin: 0;
 .shap .info.twoPart .part1 .part h3{
   font-size: 18px;
 }
+.topBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 14px 0px;
+}
+.topBtn button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBAF29;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  border-radius: 50%;
+  border: none;
+  transition: 0.5s;
+}
+.topBtn button:hover{
+  box-shadow: 4px 7px 22px #e6ae08;
+}
+.topBtn button svg{}
+.paginationBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationBox .page-item{
+  background-color: #EBAF29;
+  border-radius: 0px;
+}
+.paginationBox .page-item span{
+  color: #1b2541;
+ }
+.paginationBox .page-item .page-link{
+  background-color: #EBAF29;
+  border: 1px solid #ffefbf;
+    border-radius: 0px;
+  color: #1b2541;
+
+}
+.paginationBox .pagination .page-item:first-of-type{
+  border-radius: 8px 0px 0px 8px;
+}
+.paginationBox .pagination .page-item:first-of-type a{
+  border-radius: 8px 0px 0px 8px;
+}
+
+.paginationBox .pagination .page-item:last-of-type{
+  border-radius: 0px 8px 8px 0px;
+}
+.paginationBox .pagination .page-item:last-of-type a{
+  border-radius: 0px 8px 8px 0px;
+}
