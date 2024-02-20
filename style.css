@@ -1589,9 +1589,14 @@ margin: 0;
   justify-content: center;
 }
 
-.paginationBox .page-item{
+.paginationBox .page-item {
   background-color: #EBAF29;
   border-radius: 0px;
+  width: 34px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .paginationBox .page-item span{
   color: #1b2541;
@@ -1601,7 +1606,11 @@ margin: 0;
   border: 1px solid #ffefbf;
     border-radius: 0px;
   color: #1b2541;
-
+transition: 0.3s;
+}
+.paginationBox .page-item .page-link.active{
+  color: white;
+  background-color: #1b2541;
 }
 .paginationBox .pagination .page-item:first-of-type{
   border-radius: 8px 0px 0px 8px;
