@@ -1608,20 +1608,24 @@ margin: 0;
   color: #1b2541;
 transition: 0.3s;
 }
-.paginationBox .page-item .page-link.active{
+.paginationBox .page-item.active .page-link{
   color: white;
   background-color: #1b2541;
+}
+.paginationBox .page-item.active span {
+ 
+  color: wheat;
 }
 .paginationBox .pagination .page-item:first-of-type{
   border-radius: 8px 0px 0px 8px;
 }
-.paginationBox .pagination .page-item:first-of-type a{
+.paginationBox .pagination .page-item:first-of-type .page-link{
   border-radius: 8px 0px 0px 8px;
 }
 
 .paginationBox .pagination .page-item:last-of-type{
   border-radius: 0px 8px 8px 0px;
 }
-.paginationBox .pagination .page-item:last-of-type a{
+.paginationBox .pagination .page-item:last-of-type .page-link{
   border-radius: 0px 8px 8px 0px;
 }
