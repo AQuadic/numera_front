@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 html,
@@ -8,8 +8,8 @@ body {
   background-color: rgba(239, 233, 221, 1);
   scroll-behavior: smooth;
 }
-body{
-  max-width: 430px;
+body {
+  max-width: 100%;
   margin: auto;
   padding-top: 80px;
 }
@@ -31,10 +31,6 @@ body{
   src: url("./ExpoArabic-Bold.otf");
 }
 
-.container {
-  display: block;
-  margin-top: 20px;
-}
 .card {
   margin: 15px 0 20px;
   width: 380px;
@@ -111,8 +107,9 @@ body{
   width: 90%;
   margin-inline: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   direction: rtl;
+  gap: 20px;
 }
 .contact {
   /* position: absolute; */
@@ -160,13 +157,14 @@ body{
   align-items: center;
   justify-content: center;
   width: 45%;
-  height: 38px;
-  border-radius: 4px;
+  height: 48px;
+  border-radius: 6px;
   background: #192540;
   color: #ebaf29;
   font-family: expofont;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 20px;
+  max-width: 200px;
 }
 
 #numbers #car-numbers::before,
@@ -175,10 +173,13 @@ body{
   right: 8px;
   top: 1px;
 }
-
-
-
-
+@media (max-width: 768px) {
+  #numbers #car-numbers,
+  #numbers #bike-numbers {
+    height: 38px;
+    font-size: 15px;
+  }
+}
 .number-plate {
   position: absolute;
   left: 50%;
@@ -217,22 +218,26 @@ body{
   width: max-content;
   margin: auto;
   max-width: 100%;
+  width: 100%;
+  height: 500px;
+  margin: 60px 0px;
 }
 .add_carnum .car-image {
-  width: 98%;
+  width: 100%;
   height: 100%;
   filter: brightness(110%) contrast(90%) saturate(120%) sepia(10%);
   background-color: #a37511ec;
+  object-fit: cover;
 }
 
 .add_carnum .content {
   position: absolute;
   box-sizing: border-box;
   text-align: center;
-  bottom: 30px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 384px;
+  transform: translate(-50%, -50%);
+  width: 94%;
 }
 .add_carnum p {
   margin-block: 10px;
@@ -357,15 +362,14 @@ body{
   height: 49px;
   content: url("./images/call-center.svg");
 }
-@media (max-width:440px){
+@media (max-width: 440px) {
   .add_carnum .add {
     font-size: 16px;
-}
-.add_carnum .headline, #questions > .title {
-  
-  font-size: 20px;
- 
-}
+  }
+  .add_carnum .headline,
+  #questions > .title {
+    font-size: 20px;
+  }
 }
 /*fillter*/
 .fillter {
@@ -389,10 +393,10 @@ body{
   flex-wrap: wrap;
   transition: 0.3s;
 }
-.fillter .content .part{
+.fillter .content .part {
   max-width: calc(50% - 4px);
   width: 166px;
-  border: 1px solid #BCBEC0;
+  border: 1px solid #bcbec0;
 }
 .fillter .content .part,
 .fillter .content .form-control {
@@ -402,11 +406,10 @@ body{
 
   border-radius: 4px;
 }
-.fillter .content .form-control{
+.fillter .content .form-control {
   width: 100%;
 }
 .fillter .content .part input {
-
   color: #192540;
   font-family: expofontBold;
   font-size: 14px;
@@ -421,7 +424,7 @@ body{
   color: #192540;
   font-family: expofont;
   font-weight: bold;
- 
+
   font-size: 14px;
 }
 .fillter select {
@@ -516,10 +519,9 @@ body{
   background-color: #1b2541;
 }
 .fillter .btnSearch {
-
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   background: #1b2541;
   color: #e6ae08;
   border-radius: 6px;
@@ -529,31 +531,31 @@ body{
   padding: 5px 10px;
   gap: 10px;
 }
-.fillter .btnSearch svg{
+.fillter .btnSearch svg {
   width: 22px;
 }
 .fillter .btnSearch input {
   background: #1b2541;
   color: #e6ae08;
   border-radius: 8px;
- 
+
   border: none;
 }
-.fillter .content .showMore{
-  color: #164FD2;
+.fillter .content .showMore {
+  color: #164fd2;
   font-size: 15px;
   font-family: expofontBold;
-background-color: transparent;
-border: none;
+  background-color: transparent;
+  border: none;
 }
-.fillter .content .part.more{
+.fillter .content .part.more {
   display: none;
   transition: 0.3s;
 }
-.fillter .content.showMorePart .part.more{
-display: block;
+.fillter .content.showMorePart .part.more {
+  display: block;
 }
-.fillter .content.showMorePart .showMore{
+.fillter .content.showMorePart .showMore {
   display: none;
 }
 /*contactUs*/
@@ -763,8 +765,8 @@ select option {
   padding: 8px 10px;
   border-radius: 6px;
   text-decoration: none;
-border: none;
-max-width: 182px;
+  border: none;
+  max-width: 182px;
 }
 .nextContent button p {
   color: rgba(25, 37, 64, 1);
@@ -782,7 +784,7 @@ max-width: 182px;
 .nextContent .prev img {
   transform: rotate(180deg);
 }
-@media (max-width:500px){
+@media (max-width: 500px) {
   .nextContent {
     padding: 0px 20px;
   }
@@ -791,7 +793,6 @@ max-width: 182px;
 .sliderImgs {
   width: 388px;
   margin: auto;
- 
 }
 .sliderImgs .swiper-horizontal {
   touch-action: pan-y;
@@ -799,19 +800,19 @@ max-width: 182px;
   height: 220px;
 }
 .sliderImgs .swiper-pagination {
-    top: 90%;
+  top: 90%;
 }
-.sliderImgs img{
+.sliderImgs img {
   width: 100%;
   height: auto;
   object-fit: contain;
   border-radius: 10px;
 }
-@media (max-width:440px){
-  .sliderImgs{
+@media (max-width: 440px) {
+  .sliderImgs {
     width: 100%;
   }
-  .sliderImgs .swiper-horizontal{
+  .sliderImgs .swiper-horizontal {
     width: 100%;
   }
 }
@@ -819,26 +820,30 @@ max-width: 182px;
 .cars {
   direction: rtl;
   display: flex;
-  flex-direction: column;
+
   gap: 16px;
   justify-content: center;
-    align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .cars .cardNew {
   padding: 8px 8px 14px;
   background-color: white;
-  border-radius: 22px;
+  border-radius: 14px;
+  min-width: 360px;
+  flex: 1;
+  max-width: 360px;
 }
 .cars .cardNew .carInfo {
   position: relative;
 }
 .cars .cardNew .carInfo .imgCar {
   width: 100%;
-  border-radius: 18px;
+  border-radius: 4px;
   display: block;
   margin: auto;
 }
-.cars .cardNew .carInfo .svgNum{
+.cars .cardNew .carInfo .svgNum {
   position: absolute;
   bottom: 22px;
   left: 50%;
@@ -848,16 +853,16 @@ max-width: 182px;
   height: 68px;
   border-radius: 4px;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .carsNew .cardNew .carInfo .svgNum.bike {
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   bottom: auto;
 }
-.cars .cardNew .carInfo .featuresCar{
+.cars .cardNew .carInfo .featuresCar {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -867,25 +872,22 @@ max-width: 182px;
   top: 14px;
   left: 0;
 }
-.cars .cardNew .carInfo .featuresCar p{
+.cars .cardNew .carInfo .featuresCar p {
   font-size: 12px;
   padding: 4px 12px;
-margin: 0;
-text-align: center;
-color: rgba(25, 37, 64, 1);
-font-family: expofontBold;
-
+  margin: 0;
+  text-align: center;
+  color: rgba(25, 37, 64, 1);
+  font-family: expofontBold;
 }
-.cars .cardNew .carInfo .featuresCar .pNew{
+.cars .cardNew .carInfo .featuresCar .pNew {
   background: rgba(235, 175, 41, 1);
 }
-.cars .cardNew .carInfo .featuresCar .goodPrice{
+.cars .cardNew .carInfo .featuresCar .goodPrice {
   background: rgba(66, 255, 0, 1);
-
 }
-.cars .cardNew .carInfo .featuresCar .three{
+.cars .cardNew .carInfo .featuresCar .three {
   background: rgba(255, 154, 154, 1);
-
 }
 .cars .cardNew .carDetails {
   padding: 0px 10px;
@@ -893,19 +895,19 @@ font-family: expofontBold;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-margin: 12px 0px 16px;
-position: relative;
+  margin: 12px 0px 16px;
+  position: relative;
 }
-.cars .cardNew .carDetails .part{}
+.cars .cardNew .carDetails .part {
+}
 .cars .cardNew .carDetails .part p {
   margin: 0;
   font-family: expofont;
   line-height: 28px;
   word-spacing: 8px;
 }
-.cars .cardNew .carDetails .part .boldSpan{
+.cars .cardNew .carDetails .part .boldSpan {
   font-family: expofontBold;
-
 }
 .cars .cardNew .carDetails .part .numCar {
   font-family: Montserrat;
@@ -918,7 +920,7 @@ position: relative;
 .cars .cardNew .carDetails .price {
   flex: 1;
 }
-.cars .cardNew .carDetails .price .currency{
+.cars .cardNew .carDetails .price .currency {
   font-family: expofontBold;
   font-size: 20px;
 }
@@ -951,12 +953,98 @@ position: relative;
 }
 .cars .cardNew .contactCar a img {
 }
+.cars .cardNew .carDetails .star {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .cars .cardNew {
+    min-width: 306px;
+  }
+}
+@media (max-width: 768px) {
+  .cars {
+    gap: 26px 10px;
+  }
+  .cars .cardNew {
+    width: 306px;
+    flex: 1;
+    min-width: 184px;
+    padding: 4px 4px 14px;
+    border-radius: 8px;
+  }
+
+  .cars .cardNew .carInfo .svgNum {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 90%;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cars .cardNew .carInfo .featuresCar {
+    gap: 2px;
+  }
+  .cars .cardNew .carInfo .featuresCar p {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+  .cars .cardNew .carDetails {
+    padding: 0px 10px;
+
+    gap: 20px;
+  }
+  .cars .cardNew .carDetails .part {
+  }
+  .cars .cardNew .carDetails .part p {
+    line-height: 16px;
+    word-spacing: 2px;
+    font-size: 10px;
+  }
+
+  .cars .cardNew .carDetails .part .numCar {
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  .cars .cardNew .carDetails .price .currency {
+    font-size: 17px;
+    height: 18px;
+  }
+
+  .cars .cardNew .contactCar {
+    gap: 6px;
+  }
+  .cars .cardNew .contactCar a {
+    padding: 6px 8px;
+  }
+  .cars .cardNew .contactCar a p {
+    font-size: 10px;
+  }
+  .cars .cardNew .contactCar a img {
+    height: 14px;
+  }
+}
+@media (max-width: 440px) {
+  .cars .cardNew .contactCar a p {
+    font-size: 8px;
+  }
+  .cars .cardNew .contactCar a img {
+    height: 12px;
+  }
+  .cars .cardNew .carDetails {
+    margin: 8px 0px 8px;
+  }
+}
 .swiper-pagination-bullet {
   background: #1b2541;
   opacity: 0.3;
   transition: 0.2s;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: #e6ae08;
   opacity: 1;
 }
@@ -978,7 +1066,7 @@ position: relative;
 .successBox.false {
   opacity: 0 !important;
 }
-.successBox .content{
+.successBox .content {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -986,18 +1074,17 @@ position: relative;
   align-items: center;
   width: 400px;
   padding: 24px;
-max-width: 100%;
-border-radius: 38px;
-text-align: center;
-background-color: white;
+  max-width: 100%;
+  border-radius: 38px;
+  text-align: center;
+  background-color: white;
 }
-.successBox .content img{
+.successBox .content img {
   width: 236px;
   height: 236px;
   margin: auto;
-
 }
-.successBox .content h2{
+.successBox .content h2 {
   font-size: 28px;
   font-weight: 800;
   font-family: expofontBold;
@@ -1005,56 +1092,61 @@ background-color: white;
   text-align: center;
   margin: 0;
 }
-.successBox .content p{
+.successBox .content p {
   font-family: expofont;
   font-size: 14px;
   text-align: center;
   margin: 0;
 }
 
-.successBox .content a{
+.successBox .content a {
   background: rgba(25, 37, 64, 1);
-width: 290px;
-padding: 18px;
-max-width: 94%;
-border-radius: 4px;
-color: rgba(243, 190, 70, 1);
-font-size: 16px;
-font-family: expofont;
-text-decoration: none;
+  width: 290px;
+  padding: 18px;
+  max-width: 94%;
+  border-radius: 4px;
+  color: rgba(243, 190, 70, 1);
+  font-size: 16px;
+  font-family: expofont;
+  text-decoration: none;
 }
-.page{
-  margin: 20px 0px ;
+.page {
+  margin: 20px 0px;
   padding: 0px 12px;
 }
-.page  h1 {
+.page h1 {
   font-size: 26px;
   font-family: expofontbold;
   text-align: start;
   direction: rtl;
 }
-.page p{ font-size: 18px; 
+.page p {
+  font-size: 18px;
   font-family: expofont;
 }
 .page li {
-  font-size: 18px; 
+  font-size: 18px;
   font-family: expofont;
 }
 /*cars New*/
 /*cars*/
+.sectionCars {
+  margin: 60px 0px;
+}
 .carsNew {
   direction: rtl;
   display: flex;
-  gap: 10px;
-  justify-content: center;
-    flex-wrap: wrap;
+  gap: 26px 16px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .carsNew .cardNew {
   padding: 4px 4px 6px;
   background-color: white;
   border-radius: 5px;
-  width: 192px;
-  max-width: calc(50% - 5px);
+  width: 306px;
+  flex: 1;
+  min-width: 184px;
 }
 .carsNew .cardNew .carInfo {
   position: relative;
@@ -1065,7 +1157,7 @@ text-decoration: none;
   display: block;
   margin: auto;
 }
-.carsNew .cardNew .carInfo .svgNum{
+.carsNew .cardNew .carInfo .svgNum {
   position: absolute;
   bottom: 22px;
   left: 50%;
@@ -1075,10 +1167,10 @@ text-decoration: none;
   height: 40px;
   border-radius: 4px;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-.carsNew .cardNew .carInfo .featuresCar{
+.carsNew .cardNew .carInfo .featuresCar {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -1088,25 +1180,22 @@ text-decoration: none;
   top: 14px;
   left: 0;
 }
-.carsNew .cardNew .carInfo .featuresCar p{
-  font-size: 8px;
-    padding: 2px 6px;
-margin: 0;
-text-align: center;
-color: rgba(25, 37, 64, 1);
-font-family: expofontBold;
-
+.carsNew .cardNew .carInfo .featuresCar p {
+  font-size: 10px;
+  padding: 2px 6px;
+  margin: 0;
+  text-align: center;
+  color: rgba(25, 37, 64, 1);
+  font-family: expofontBold;
 }
-.carsNew .cardNew .carInfo .featuresCar .pNew{
+.carsNew .cardNew .carInfo .featuresCar .pNew {
   background: rgba(235, 175, 41, 1);
 }
-.carsNew .cardNew .carInfo .featuresCar .goodPrice{
+.carsNew .cardNew .carInfo .featuresCar .goodPrice {
   background: rgba(66, 255, 0, 1);
-
 }
-.carsNew .cardNew .carInfo .featuresCar .three{
+.carsNew .cardNew .carInfo .featuresCar .three {
   background: rgba(255, 154, 154, 1);
-
 }
 .carsNew .cardNew .carDetails {
   padding: 0px 10px;
@@ -1115,19 +1204,19 @@ font-family: expofontBold;
   gap: 20px;
   flex-wrap: wrap;
   margin: 4px 0px 5px;
-position: relative;
+  position: relative;
 }
-.carsNew .cardNew .carDetails .part{}
+.carsNew .cardNew .carDetails .part {
+}
 .carsNew .cardNew .carDetails .part p {
   margin: 0;
   font-family: expofont;
-  line-height: 14px;
+  line-height: 22px;
   word-spacing: 2px;
-  font-size: 8px;
+  font-size: 12px;
 }
-.carsNew .cardNew .carDetails .part .boldSpan{
+.carsNew .cardNew .carDetails .part .boldSpan {
   font-family: expofontBold;
-
 }
 .carsNew .cardNew .carDetails .part .numCar {
   font-family: Montserrat;
@@ -1140,7 +1229,7 @@ position: relative;
 .carsNew .cardNew .carDetails .price {
   flex: 1;
 }
-.carsNew .cardNew .carDetails .price .currency{
+.carsNew .cardNew .carDetails .price .currency {
   font-family: expofontBold;
   font-size: 17px;
   height: 18px;
@@ -1157,7 +1246,7 @@ position: relative;
   gap: 6px;
 }
 .carsNew .cardNew .contactCar a {
-  padding: 4px 8px;
+  padding: 6px 8px;
   border-radius: 4px;
   background-color: rgba(25, 37, 64, 1);
   display: flex;
@@ -1169,56 +1258,55 @@ position: relative;
 }
 .carsNew .cardNew .contactCar a p {
   color: white;
-  font-size: 8px;
+  font-size: 10px;
   font-family: expofont;
   margin: 0;
 }
 .carsNew .cardNew .contactCar a img {
-  height: 11px;
+  height: 14px;
   width: auto;
 }
 /*con*/
-.con{
-  padding: 0px 22px ;
+.con {
+  padding: 0px 22px;
   margin-top: 20px;
 }
 /*about*/
-.about{
+.about {
   margin: 10px auto 14px;
 }
-.about h1{
+.about h1 {
   color: #192540;
   font-size: 24px;
   margin-bottom: 4px;
   text-align: center;
   font-family: expofontBold;
 }
-.about h2{
+.about h2 {
   color: #666666;
   font-size: 14px;
   margin-bottom: 0px;
   text-align: center;
   font-family: expofont;
-
 }
 /*step*/
-.step{
+.step {
   width: 100%;
   background-color: #192540;
-  color: #EBAF29;
+  color: #ebaf29;
   text-align: center;
   padding: 8px 18px;
   border-radius: 5px;
   font-family: expofont;
-margin-bottom: 4px;
-font-size: 15px;
+  margin-bottom: 4px;
+  font-size: 15px;
 }
 /*flaps*/
-.flaps{
+.flaps {
   direction: rtl;
 }
-.flaps .headFlaps{
-  background-color: #EBAF29;
+.flaps .headFlaps {
+  background-color: #ebaf29;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1228,28 +1316,28 @@ font-size: 15px;
   height: 46px;
   margin-bottom: 12px;
 }
-.flaps .headFlaps h2{
+.flaps .headFlaps h2 {
   font-size: 15px;
   font-family: expofont;
   font-weight: 700;
-color: #192540;
-margin: 0;
+  color: #192540;
+  margin: 0;
 }
-.flaps .headFlaps button{
+.flaps .headFlaps button {
   background-color: transparent;
   border: none;
   width: 30px;
   height: 30px;
   display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
-.flaps .headFlaps button svg{
+.flaps .headFlaps button svg {
   width: 30px;
   height: 30px;
 }
-.flaps .allFlaps{
+.flaps .allFlaps {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -1260,10 +1348,10 @@ margin: 0;
   align-items: center;
   gap: 8px;
 }
-.flaps .allFlaps .flap .part{
+.flaps .allFlaps .flap .part {
   width: 86px;
 }
-.flaps .allFlaps .flap .part.code{ 
+.flaps .allFlaps .flap .part.code {
   width: 64px;
 }
 .flaps .allFlaps .flap .part .form-group {
@@ -1275,7 +1363,7 @@ margin: 0;
   min-height: 34px;
   height: 34px;
   font-size: 14px;
-  color: #6D6E70;
+  color: #6d6e70;
   box-shadow: none;
   font-family: expofont;
   border: none;
@@ -1288,7 +1376,7 @@ margin: 0;
   border-radius: 5px;
   font-size: 14px;
   font-family: expofont;
-  color: #6D6E70;
+  color: #6d6e70;
   font-weight: 600;
   outline: none;
   padding: 0px 6px;
@@ -1298,10 +1386,9 @@ margin: 0;
 
   font-weight: 600;
   font-size: 14px;
-  color: #6D6E70;
-
+  color: #6d6e70;
 }
-.flaps .allFlaps .flap .delete{
+.flaps .allFlaps .flap .delete {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1319,26 +1406,26 @@ margin: 0;
   font-weight: 700;
   font-family: cursive;
 }
-.flaps .allFlaps .flap:first-of-type .delete{
+.flaps .allFlaps .flap:first-of-type .delete {
   display: none;
 }
 /*stepTwo*/
-.stepTwo{
+.stepTwo {
   margin-bottom: 200px;
   direction: rtl;
 }
-.stepTwo .part{
+.stepTwo .part {
   margin-bottom: 16px;
   margin-top: 22px;
 }
-.stepTwo .part label{
+.stepTwo .part label {
   font-size: 15px;
   font-family: expofont;
-margin-bottom: 4px;
-color: black;
-font-weight: 600;
+  margin-bottom: 4px;
+  color: black;
+  font-weight: 600;
 }
-.stepTwo .part input{
+.stepTwo .part input {
   width: 100%;
   height: 34px;
   border: none;
@@ -1348,29 +1435,29 @@ font-weight: 600;
   font-size: 14px;
   color: #192540;
   padding: 8px 10px;
- outline: none;
+  outline: none;
 }
-.stepTwo .part input::placeholder{
+.stepTwo .part input::placeholder {
   font-family: expofont;
 
   font-weight: 600;
   font-size: 14px;
-  color: #6D6E70;
+  color: #6d6e70;
 }
-.stepTwo label{
+.stepTwo label {
   font-size: 15px;
   font-family: expofont;
-margin-bottom: 4px;
-color: black;
-font-weight: 600;
+  margin-bottom: 4px;
+  color: black;
+  font-weight: 600;
 }
-.stepTwo .backGround{
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 16px;
+.stepTwo .backGround {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
-.stepTwo .backGround button{
+.stepTwo .backGround button {
   flex: 1;
   height: 34px;
   border-radius: 5px;
@@ -1381,33 +1468,33 @@ gap: 16px;
   text-align: start;
   font-weight: 600;
 }
-.stepTwo .backGround .light{
+.stepTwo .backGround .light {
   background-color: white;
-  color: #6D6E70;
- border: 1px solid;
+  color: #6d6e70;
+  border: 1px solid;
 }
-.stepTwo .backGround .dark{
+.stepTwo .backGround .dark {
   background-color: black;
   color: white;
-} 
-.stepTwo  .colors{
+}
+.stepTwo .colors {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 24px;
 }
-.stepTwo  .colors button{
+.stepTwo .colors button {
   width: 70px;
   height: 35px;
   border-radius: 5px;
   border: 1px solid;
   flex: 1;
 }
-.stepTwo  .colors button.active{
+.stepTwo .colors button.active {
   border: 2px solid black;
 }
-.stepTwo .upLoadImg{
+.stepTwo .upLoadImg {
   position: relative;
   display: flex;
   align-items: center;
@@ -1418,18 +1505,17 @@ gap: 16px;
   background-color: #192540;
   border-radius: 6px;
 }
-.stepTwo .upLoadImg p{
-  color: #EBAF29;
+.stepTwo .upLoadImg p {
+  color: #ebaf29;
   font-size: 32px;
   margin: 0;
   font-family: expofont;
-
 }
-.stepTwo .upLoadImg svg{
+.stepTwo .upLoadImg svg {
   width: 40px;
   height: 40px;
 }
-.stepTwo .upLoadImg .LoadInput{
+.stepTwo .upLoadImg .LoadInput {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1442,42 +1528,41 @@ gap: 16px;
 }
 
 /*shap*/
-.shap{
+.shap {
   position: relative;
   width: 430px;
   height: 480px;
   margin-bottom: 26px;
   direction: rtl;
 }
-.shap .imgShap{
+.shap .imgShap {
   position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
   background-color: black;
 }
-.shap .imgShap::before{
+.shap .imgShap::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./images/back.png');
+  background-image: url("./images/back.png");
   background-size: cover;
-  
 }
-.shap .imgShap.white::before{
+.shap .imgShap.white::before {
   opacity: 40%;
 }
 .shap .info {
   position: absolute;
   top: calc(50% - 28px);
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 94%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.shap .info .part1{
+.shap .info .part1 {
   display: flex;
 
   flex-direction: column;
@@ -1489,19 +1574,19 @@ gap: 16px;
   max-width: 240px;
 }
 
-
 .shap .info .svgImg {
   height: 50px;
   margin-bottom: 4px;
 }
-.shap .info .svgImg svg{}
-.shap .info h3{
+.shap .info .svgImg svg {
+}
+.shap .info h3 {
   color: white;
   font-size: 22px;
   margin: 0;
-    letter-spacing: -2px;
+  letter-spacing: -2px;
 }
-.shap .contactShap{
+.shap .contactShap {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1510,51 +1595,51 @@ gap: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-background-color: #E50000;
-padding: 10px;
-z-index: 50;
+  background-color: #e50000;
+  padding: 10px;
+  z-index: 50;
 }
-.shap .contactShap h4{
+.shap .contactShap h4 {
   font-size: 15px;
   color: white;
   font-family: expofont;
-margin: 0;
+  margin: 0;
 }
-.shap .contactShap p{
+.shap .contactShap p {
   direction: ltr;
   font-size: 15px;
   color: white;
   margin: 0;
   font-family: expofont;
-
 }
-.shap .comment{
+.shap .comment {
   position: absolute;
   bottom: 44px;
   width: 100%;
-
 }
-.shap .comment p{
+.shap .comment p {
   font-size: 15px;
   color: white;
-  padding: 0px 12px ;
+  padding: 0px 12px;
   font-family: expofont;
-text-align: end;
-margin: 0;
+  text-align: end;
+  margin: 0;
 }
-
 
 .shap .info.twoPart {
   gap: 20px;
   align-items: flex-start;
 }
-.shap .info.twoPart .part1{}
-.shap .info.twoPart .part1 .part{}
-.shap .info.twoPart .part1 .part .svgImg{
+.shap .info.twoPart .part1 {
+}
+.shap .info.twoPart .part1 .part {
+}
+.shap .info.twoPart .part1 .part .svgImg {
   height: 44px;
 }
-.shap .info.twoPart .part1 .part .svgImg iframe{}
-.shap .info.twoPart .part1 .part h3{
+.shap .info.twoPart .part1 .part .svgImg iframe {
+}
+.shap .info.twoPart .part1 .part h3 {
   font-size: 18px;
 }
 .topBtn {
@@ -1571,7 +1656,7 @@ margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EBAF29;
+  background-color: #ebaf29;
   width: 46px;
   height: 46px;
   padding: 4px;
@@ -1579,11 +1664,12 @@ margin: 0;
   border: none;
   transition: 0.5s;
 }
-.topBtn button:hover{
+.topBtn button:hover {
   box-shadow: 4px 7px 22px #e6ae08;
 }
-.topBtn button svg{}
-.paginationBox{
+.topBtn button svg {
+}
+.paginationBox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1591,47 +1677,76 @@ margin: 0;
 }
 
 .paginationBox .page-item {
-  background-color: #EBAF29;
+  background-color: #ebaf29;
   border-radius: 0px;
   width: 34px;
   height: 38px;
   display: flex;
   align-items: center;
 }
-.paginationBox .page-item span{
+.paginationBox .page-item span {
   color: #1b2541;
- }
-.paginationBox .page-item .page-link{
-  background-color: #EBAF29;
+}
+.paginationBox .page-item .page-link {
+  background-color: #ebaf29;
   border: none;
-    border-radius: 0px;
+  border-radius: 0px;
   color: #1b2541;
-transition: 0.3s;
-border-right: 1px solid #fdefbd;
+  transition: 0.3s;
+  border-right: 1px solid #fdefbd;
 }
-.paginationBox .page-item.active{
+.paginationBox .page-item.active {
   background-color: #1b2541;
-
 }
-.paginationBox .page-item.active .page-link{
+.paginationBox .page-item.active .page-link {
   color: white;
   background-color: #1b2541;
 }
 .paginationBox .page-item.active span {
- 
   color: wheat;
 }
-.paginationBox .pagination .page-item:first-of-type{
+.paginationBox .pagination .page-item:first-of-type {
   border-radius: 8px 0px 0px 8px;
 }
-.paginationBox .pagination .page-item:first-of-type .page-link{
+.paginationBox .pagination .page-item:first-of-type .page-link {
   border-radius: 8px 0px 0px 8px;
 }
 
-.paginationBox .pagination .page-item:last-of-type{
+.paginationBox .pagination .page-item:last-of-type {
   border-radius: 0px 8px 8px 0px;
 }
-.paginationBox .pagination .page-item:last-of-type .page-link{
+.paginationBox .pagination .page-item:last-of-type .page-link {
   border-radius: 0px 8px 8px 0px;
   border: none;
+}
+/*loading*/
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #352a097d;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+}
+
+.wave {
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  /*reflection for any element*/
+}
+
+.wave span {
+  display: inline-block;
+  color: #fff;
+  font-size: 4em;
+  text-transform: uppercase;
+  animation: animate 1.5s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--c));
+}
+@keyframes animate {
+  20% {
+    transform: translateY(-20px);
+  }
 }

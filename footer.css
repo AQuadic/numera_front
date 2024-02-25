@@ -6,7 +6,7 @@ footer p {
 }
 footer
 {
-    width: 430px;
+    width: 100%;
     height: max-content;
     background-color: black;
     color: white;
@@ -22,10 +22,11 @@ footer p span{
 }
 footer .footer-container
 {
+    gap: 146px;
     display: flex;
-    padding-inline: 30px;
+
     padding-top: 20px;
-    justify-content: space-between;
+    
 }
 
 footer .footer-container .social-links
@@ -82,7 +83,7 @@ footer .quick-links h4 {
 }
 
 hr {
-    width: 400px;
+    width: 100%;
 }
 
 footer .copy_rights
@@ -107,4 +108,11 @@ footer .developed_by {
     text-align: end;  
      margin: 0;
     width: 60px;
+}
+@media (max-width: 500px) {
+    footer .footer-container {
+      
+        gap: 20px;
+        justify-content: space-between;
+    }
 }
