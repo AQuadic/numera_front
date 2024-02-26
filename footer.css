@@ -33,7 +33,7 @@ footer .footer-container .social-links
 {
     margin-top: 18px;
     display: flex;
-    justify-content: space-between
+ gap: 20px;
 }
 footer .footer-container .social-links a:nth-child(1)::before,
 footer .footer-container .social-links a:nth-child(2)::before,
@@ -58,6 +58,7 @@ footer .footer-container .social-links a:nth-child(3)::before
 
 footer .footer-container .contact-details
 {
+    flex: 1;
     display: block;
  
 }
@@ -74,7 +75,8 @@ footer .quick-links a {
 }
 footer .quick-links {
     width: 116px;
-
+flex: 1;
+min-width: auto;
 }
 footer .quick-links h4 {
     width: 100px;

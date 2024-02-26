@@ -27,7 +27,6 @@
   <body>
     <nav class="navbar ixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container">
-       
         <div class="navbar-toggler2">
           <button
             class="navbar-toggler collapsed"
@@ -41,6 +40,25 @@
             <span class="toggler-icon middle-bar"></span>
             <span class="toggler-icon bottom-bar"></span>
           </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="navLink"> الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="navLink">عن نمرة</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="navLink">اللوحات</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="navLink">بيع رقمك</a>
+            </li>
+            <li class="nav-item">
+              <a href="art.html" class="navLink">رسم الأرقام</a>
+            </li>
+          </ul>
         </div>
         <a class="navbar-brand" href="index.html">
           <img id="logo" src="./images/logo.svg" alt="Nemra" />
@@ -179,13 +197,12 @@
                 >
               </div>
               <div class="custom-control custom-checkbox">
-              <div class="form-check">
+                <div class="form-check">
                   <input
                     class="form-check-input checkType"
                     type="checkbox"
                     value=""
                     id="flexCheckChecked"
-                    
                   />
                 </div>
                 <label class="custom-control-label" for="customCheck1"
@@ -193,13 +210,12 @@
                 >
               </div>
               <div class="custom-control custom-checkbox">
-              <div class="form-check">
+                <div class="form-check">
                   <input
                     class="form-check-input checkType"
                     type="checkbox"
                     value=""
                     id="flexCheckChecked"
-                    
                   />
                 </div>
                 <label class="custom-control-label" for="customCheck1"
@@ -224,17 +240,21 @@
             </select>
           </div>
         </div>
-        
+
         <div class="form-check checkAgree">
           <label class="form-check-label" for="flexCheckDefault">
             اوافق على الشروط والأحكام
           </label>
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
         </div>
         <button type="submit" class="btnSend">
           <p>ارسال الإعلان للمراجعة والنشر</p>
-          <img src="./images/send.svg" alt="send">
+          <img src="./images/send.svg" alt="send" />
         </button>
       </form>
     </div>
@@ -273,14 +293,14 @@
         </div>
       </div>
     </footer>
-<div class="successBox false">
-  <div class="content">
-    <img src="./images/sucsess.png" alt="sucsess">
-    <h2>تم إضافة الرقم بنجاح</h2>
-    <p>سوف يتم مراجعة البيانات والنشر في أقرب وقت</p>
-    <a href="" class="goHome">ارسال الإعلان للمراجعة والنشر</a>
-  </div>
-</div>
+    <div class="successBox false">
+      <div class="content">
+        <img src="./images/sucsess.png" alt="sucsess" />
+        <h2>تم إضافة الرقم بنجاح</h2>
+        <p>سوف يتم مراجعة البيانات والنشر في أقرب وقت</p>
+        <a href="" class="goHome">ارسال الإعلان للمراجعة والنشر</a>
+      </div>
+    </div>
     <script src="./js/jquery-3.6.1.min.js"></script>
 
     <script src="./js/popper.min.js"></script>
@@ -301,14 +321,14 @@
       });
     </script>
     <script>
-      document.getElementById("menu").addEventListener("click", function() {
-          var section = document.querySelector(".menuParts");
-          if (section.classList.contains("none")) {
-              section.classList.remove("none");
-          } else {
-              section.classList.add("none");
-          }
+      document.getElementById("menu").addEventListener("click", function () {
+        var section = document.querySelector(".menuParts");
+        if (section.classList.contains("none")) {
+          section.classList.remove("none");
+        } else {
+          section.classList.add("none");
+        }
       });
-      </script>
+    </script>
   </body>
 </html>
