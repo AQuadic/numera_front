@@ -9,6 +9,12 @@
     height: 80px;
     margin-bottom: 10px;
 }
+.navbar-brand{
+  margin: 0;
+}
+.offcanvas{
+  max-width: 75%;
+}
 .navbar .nav {
    position: relative;
     display: flex;

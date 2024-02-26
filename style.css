@@ -7,7 +7,8 @@ body {
   padding: 0;
   background-color: rgba(239, 233, 221, 1);
   scroll-behavior: smooth;
-  
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 body {
   max-width: 100%;
