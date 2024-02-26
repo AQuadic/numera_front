@@ -565,6 +565,13 @@ flex: 1;
   .fillter .content {
     flex-direction: column;
 }
+.fillter .content .part {
+  max-width: 100%;
+  min-width: 120px;
+}
+.fillter .content .part1 {
+ width: 100%;
+}
 }
 /*contactUs*/
 .contactUs {
