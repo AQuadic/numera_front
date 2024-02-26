@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,21 +25,16 @@
     <title>Car Services</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar ixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img id="logo" src="./images/logo.svg" alt="Nemra"/>
-        </a>
-          
        
         <div class="navbar-toggler2">
           <button
             class="navbar-toggler collapsed"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
             aria-label="Toggle navigation"
           >
             <span class="toggler-icon top-bar"></span>
@@ -47,35 +42,43 @@
             <span class="toggler-icon bottom-bar"></span>
           </button>
         </div>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="index.html" class="navLink"> الصفحة الرئيسية</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="navLink">عن نمرة</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="navLink">اللوحات</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="navLink">بيع رقمك</a>
-            </li>
-            <li class="nav-item">
-              <a href="art.html" class="navLink">رسم الأرقام</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="navLink">الأسئلة المتكررة</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="navLink">الشروط والأحكام</a>
-            </li>
-            <li class="nav-item">
-              <a href="contactUs.html" class="navLink">التواصل</a>
-            </li>
-          </ul>
-        
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="./images/logo.svg" alt="Nemra" />
+        </a>
+        <div
+          class="offcanvas offcanvas-start text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="index.html" class="navLink"> الصفحة الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navLink">عن نمرة</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navLink">اللوحات</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navLink">بيع رقمك</a>
+              </li>
+              <li class="nav-item">
+                <a href="art.html" class="navLink">رسم الأرقام</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navLink">الأسئلة المتكررة</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navLink">الشروط والأحكام</a>
+              </li>
+              <li class="nav-item">
+                <a href="contactUs.html" class="navLink">التواصل</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,21 +29,16 @@
     <title>Car Services</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar ixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img id="logo" src="./images/logo.svg" alt="Nemra"/>
-        </a>
-          
        
         <div class="navbar-toggler2">
           <button
             class="navbar-toggler collapsed"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
             aria-label="Toggle navigation"
           >
             <span class="toggler-icon top-bar"></span>
@@ -51,38 +46,47 @@
             <span class="toggler-icon bottom-bar"></span>
           </button>
         </div>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="index.html" class="navLink"> الصفحة الرئيسية</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="navLink">عن نمرة</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="navLink">اللوحات</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="navLink">بيع رقمك</a>
-            </li>
-            <li class="nav-item">
-              <a href="art.html" class="navLink">رسم الأرقام</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="navLink">الأسئلة المتكررة</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="navLink">الشروط والأحكام</a>
-            </li>
-            <li class="nav-item">
-              <a href="contactUs.html" class="navLink">التواصل</a>
-            </li>
-          </ul>
-        
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="./images/logo.svg" alt="Nemra" />
+        </a>
+        <div
+          class="offcanvas offcanvas-start text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="index.html" class="navLink"> الصفحة الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navLink">عن نمرة</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navLink">اللوحات</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navLink">بيع رقمك</a>
+              </li>
+              <li class="nav-item">
+                <a href="art.html" class="navLink">رسم الأرقام</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navLink">الأسئلة المتكررة</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navLink">الشروط والأحكام</a>
+              </li>
+              <li class="nav-item">
+                <a href="contactUs.html" class="navLink">التواصل</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
+
     <div class="sliderImgs">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -144,102 +148,104 @@
       <a id="car-numbers" href="https://example.com">لوحات الزوار </a>
     </div>
     <div class="fillter">
-      <div class="content partsFillter">
-        <div class="part1">
-          <img src="./images/fillter.png" class="imgFillter" alt="Fillter" />
-          <h4>فلترة اللوحات</h4>
+      <div class="container">
+        <div class="content partsFillter">
+          <div class="part1">
+            <img src="./images/fillter.png" class="imgFillter" alt="Fillter" />
+            <h4>فلترة اللوحات</h4>
+          </div>
+          <div class="parts">
+            <div class="part">
+              <div class="form-group">
+                <select class="form-control">
+                  <option selected>اختر الإمارة</option>
+                  <option>جميع الإمارات</option>
+                  <option>دبي</option>
+                  <option>ابوظبي</option>
+                  <option>دبي</option>
+                  <option>ابوظبي</option>
+                </select>
+              </div>
+            </div>
+            <div class="part">
+              <div class="form-group">
+                <select class="form-control">
+                  <option selected>الفئة</option>
+                  <option>جميع الفئات</option>
+                  <option>مركبات</option>
+                  <option>دراجات</option>
+                </select>
+              </div>
+            </div>
+            <div class="part">
+              <div class="form-group">
+                <select class="form-control">
+                  <option selected>جميع الأرقام</option>
+
+                  <option>1 أرقام</option>
+                  <option>2 أرقام</option>
+                  <option>3 أرقام</option>
+                  <option>4 أرقام</option>
+                </select>
+              </div>
+            </div>
+            <div class="part more">
+              <div class="form-group">
+                <input type="text" placeholder="يتضمن : مثال 700" />
+              </div>
+            </div>
+            <div class="part more">
+              <div class="form-group">
+                <input type="text" placeholder="أعلى سعر" />
+              </div>
+            </div>
+            <div class="part more">
+              <div class="form-group">
+                <input type="text" placeholder="اقل سعر" />
+              </div>
+            </div>
+            <div class="part more">
+              <div class="form-group">
+                <input type="text" placeholder="يبدأ بـ : مثال 123" />
+              </div>
+            </div>
+            <div class="part more">
+              <div class="form-group">
+                <input type="text" placeholder="ينتهي بـ : مثال 222" />
+              </div>
+            </div>
+            <div class="part more">
+              <div class="form-group">
+                <select class="form-control">
+                  <option selected>تنسيق الرقم</option>
+                  <option>أي تنسيق</option>
+                  <option>يتضمن رقم مكرر 2 مرات</option>
+                  <option>يتضمن رقم مكرر 3 مرات</option>
+                  <option>يتضمن رقم مكرر 4 مرات</option>
+                  <option>x???x (5 أرقام)</option>
+                </select>
+              </div>
+            </div>
+            <div class="btnSearch">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.375 23.1378L17.767 16.5298C19.355 14.6234 20.1468 12.1783 19.9779 9.70296C19.8089 7.22764 18.6921 4.91276 16.8599 3.23987C15.0276 1.56698 12.6209 0.66488 10.1405 0.72124C7.66007 0.777601 5.29685 1.78808 3.54246 3.54246C1.78808 5.29685 0.777601 7.66007 0.72124 10.1405C0.66488 12.6209 1.56698 15.0276 3.23987 16.8599C4.91276 18.6921 7.22764 19.8089 9.70296 19.9779C12.1783 20.1468 14.6234 19.355 16.5298 17.767L23.1378 24.375L24.375 23.1378ZM2.50004 10.375C2.50004 8.81751 2.9619 7.29496 3.82722 5.99992C4.69253 4.70489 5.92244 3.69553 7.36141 3.09949C8.80038 2.50345 10.3838 2.3475 11.9114 2.65136C13.439 2.95521 14.8422 3.70524 15.9435 4.80657C17.0448 5.90791 17.7949 7.3111 18.0987 8.8387C18.4026 10.3663 18.2466 11.9497 17.6506 13.3887C17.0546 14.8276 16.0452 16.0575 14.7502 16.9229C13.4551 17.7882 11.9326 18.25 10.375 18.25C8.28717 18.2477 6.28548 17.4173 4.80913 15.9409C3.33279 14.4646 2.50236 12.4629 2.50004 10.375Z"
+                  fill="#EBAF29"
+                />
+              </svg>
+
+              <input type="submit" value="بحث" />
+            </div>
+          </div>
+
+          <button class="showMore" id="toggleBtn">+ خيارات أكثر</button>
         </div>
-        <div class="parts">
-          <div class="part">
-            <div class="form-group">
-              <select class="form-control">
-                <option selected>اختر الإمارة</option>
-                <option>جميع الإمارات</option>
-                <option>دبي</option>
-                <option>ابوظبي</option>
-                <option>دبي</option>
-                <option>ابوظبي</option>
-              </select>
-            </div>
-          </div>
-          <div class="part">
-            <div class="form-group">
-              <select class="form-control">
-                <option selected>الفئة</option>
-                <option>جميع الفئات</option>
-                <option>مركبات</option>
-                <option>دراجات</option>
-              </select>
-            </div>
-          </div>
-          <div class="part">
-            <div class="form-group">
-              <select class="form-control">
-                <option selected>جميع الأرقام</option>
-
-                <option>1 أرقام</option>
-                <option>2 أرقام</option>
-                <option>3 أرقام</option>
-                <option>4 أرقام</option>
-              </select>
-            </div>
-          </div>
-          <div class="part more">
-            <div class="form-group">
-              <input type="text" placeholder="يتضمن : مثال 700" />
-            </div>
-          </div>
-          <div class="part more">
-            <div class="form-group">
-              <input type="text" placeholder="أعلى سعر" />
-            </div>
-          </div>
-          <div class="part more">
-            <div class="form-group">
-              <input type="text" placeholder="اقل سعر" />
-            </div>
-          </div>
-          <div class="part more">
-            <div class="form-group">
-              <input type="text" placeholder="يبدأ بـ : مثال 123" />
-            </div>
-          </div>
-          <div class="part more">
-            <div class="form-group">
-              <input type="text" placeholder="ينتهي بـ : مثال 222" />
-            </div>
-          </div>
-          <div class="part more">
-            <div class="form-group">
-              <select class="form-control">
-                <option selected>تنسيق الرقم</option>
-                <option>أي تنسيق</option>
-                <option>يتضمن رقم مكرر 2 مرات</option>
-                <option>يتضمن رقم مكرر 3 مرات</option>
-                <option>يتضمن رقم مكرر 4 مرات</option>
-                <option>x???x (5 أرقام)</option>
-              </select>
-            </div>
-          </div>
-          <div class="btnSearch">
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M24.375 23.1378L17.767 16.5298C19.355 14.6234 20.1468 12.1783 19.9779 9.70296C19.8089 7.22764 18.6921 4.91276 16.8599 3.23987C15.0276 1.56698 12.6209 0.66488 10.1405 0.72124C7.66007 0.777601 5.29685 1.78808 3.54246 3.54246C1.78808 5.29685 0.777601 7.66007 0.72124 10.1405C0.66488 12.6209 1.56698 15.0276 3.23987 16.8599C4.91276 18.6921 7.22764 19.8089 9.70296 19.9779C12.1783 20.1468 14.6234 19.355 16.5298 17.767L23.1378 24.375L24.375 23.1378ZM2.50004 10.375C2.50004 8.81751 2.9619 7.29496 3.82722 5.99992C4.69253 4.70489 5.92244 3.69553 7.36141 3.09949C8.80038 2.50345 10.3838 2.3475 11.9114 2.65136C13.439 2.95521 14.8422 3.70524 15.9435 4.80657C17.0448 5.90791 17.7949 7.3111 18.0987 8.8387C18.4026 10.3663 18.2466 11.9497 17.6506 13.3887C17.0546 14.8276 16.0452 16.0575 14.7502 16.9229C13.4551 17.7882 11.9326 18.25 10.375 18.25C8.28717 18.2477 6.28548 17.4173 4.80913 15.9409C3.33279 14.4646 2.50236 12.4629 2.50004 10.375Z"
-                fill="#EBAF29"
-              />
-            </svg>
-
-            <input type="submit" value="بحث" />
-          </div>
-        </div>
-
-        <button class="showMore" id="toggleBtn">+ خيارات أكثر</button>
       </div>
     </div>
     <section class="sectionCars">
@@ -248,7 +254,7 @@
           <div class="cardNew">
             <div class="carInfo">
               <img src="./images/1.png" alt="first_car" class="imgCar" />
-              <div class="svgNum  bike">
+              <div class="svgNum bike">
                 <iframe
                   src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi"
                   style="width: 100%; height: 88px"
@@ -273,7 +279,12 @@
                 <p>درهم</p>
               </div>
               <div class="star">
-                <img src="./images/star.png" alt="star" width="40" height="40" />
+                <img
+                  src="./images/star.png"
+                  alt="star"
+                  width="40"
+                  height="40"
+                />
               </div>
             </div>
             <div class="contactCar">
@@ -315,7 +326,12 @@
                 <p>درهم</p>
               </div>
               <div class="star">
-                <img src="./images/star.png" alt="star" width="40" height="40" />
+                <img
+                  src="./images/star.png"
+                  alt="star"
+                  width="40"
+                  height="40"
+                />
               </div>
             </div>
             <div class="contactCar">
@@ -357,7 +373,12 @@
                 <p>درهم</p>
               </div>
               <div class="star">
-                <img src="./images/star.png" alt="star" width="40" height="40" />
+                <img
+                  src="./images/star.png"
+                  alt="star"
+                  width="40"
+                  height="40"
+                />
               </div>
             </div>
             <div class="contactCar">
@@ -399,7 +420,12 @@
                 <p>درهم</p>
               </div>
               <div class="star">
-                <img src="./images/star.png" alt="star" width="40" height="40" />
+                <img
+                  src="./images/star.png"
+                  alt="star"
+                  width="40"
+                  height="40"
+                />
               </div>
             </div>
             <div class="contactCar">
@@ -441,7 +467,12 @@
                 <p>درهم</p>
               </div>
               <div class="star">
-                <img src="./images/star.png" alt="star" width="40" height="40" />
+                <img
+                  src="./images/star.png"
+                  alt="star"
+                  width="40"
+                  height="40"
+                />
               </div>
             </div>
             <div class="contactCar">
@@ -458,8 +489,7 @@
         </div>
       </div>
     </section>
-    
-   
+
     <div class="nextContent">
       <button href="" class="next">
         <p>السابق</p>
@@ -511,22 +541,28 @@
       <p class="title">ليش تختار نمرة ؟</p>
       <p class="description">نتميز بخطوات بسيطة وسهلة لبيع وشراء اللوحات</p>
     </div>
-    <div id="features">
-      <div class="feature">
-        <p class="feature-title">خطوات سهلة وبسيطة</p>
-        <p class="feature-description">بيع او اشتري لوحات دبي بسهولة</p>
-      </div>
-      <div class="feature">
-        <p class="feature-title">RTA مرخصين من</p>
-        <p class="feature-description">
-          مرخصين من هيئة الطرق والمواصلات واقتصادية دبي
-        </p>
-      </div>
-      <div class="feature">
-        <p class="feature-title">خدمة عملاء 24/7</p>
-        <p class="feature-description">دعم العملاء متوفر على مدار الساعة</p>
+    <div class="container">
+      <div id="features">
+        <div class="feature">
+          <img src="./images/trophy.svg" alt="trophy" />
+          <p class="feature-title">خطوات سهلة وبسيطة</p>
+          <p class="feature-description">بيع او اشتري لوحات دبي بسهولة</p>
+        </div>
+        <div class="feature">
+          <img src="./images/verified.svg" alt="verified" />
+          <p class="feature-title">RTA مرخصين من</p>
+          <p class="feature-description">
+            مرخصين من هيئة الطرق والمواصلات واقتصادية دبي
+          </p>
+        </div>
+        <div class="feature">
+          <img src="./images/call-center.svg" alt="call" />
+          <p class="feature-title">خدمة عملاء 24/7</p>
+          <p class="feature-description">دعم العملاء متوفر على مدار الساعة</p>
+        </div>
       </div>
     </div>
+
     <footer>
       <div class="container">
         <div class="footer-container">
@@ -562,29 +598,35 @@
           </div>
         </div>
       </div>
-    
-  
     </footer>
     <div class="topBtn">
       <button id="goButton" href="/">
-        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.5684 12C17.4125 12 17.8769 11.0186 17.3416 10.3659L9.61445 0.942951C9.21438 0.455079 8.46802 0.455079 8.06795 0.94295L0.340779 10.3659C-0.194491 11.0186 0.269887 12 1.11403 12L16.5684 12Z" fill="#0B1F51"/>
-          </svg>
-          
+        <svg
+          width="18"
+          height="12"
+          viewBox="0 0 18 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.5684 12C17.4125 12 17.8769 11.0186 17.3416 10.3659L9.61445 0.942951C9.21438 0.455079 8.46802 0.455079 8.06795 0.94295L0.340779 10.3659C-0.194491 11.0186 0.269887 12 1.11403 12L16.5684 12Z"
+            fill="#0B1F51"
+          />
+        </svg>
       </button>
     </div>
     <div class="loading">
       <div class="wave">
-        <span style="--c:1;">L</span>
-        <span style="--c:2;">o</span>
-        <span style="--c:3;">a</span>
-        <span style="--c:4;">d</span>
-        <span style="--c:5;">i</span>
-        <span style="--c:6;">n</span>
-        <span style="--c:7;">g</span>
-        <span style="--c:8;">.</span>
-        <span style="--c:9;">.</span>
-        <span style="--c:10;">.</span>
+        <span style="--c: 1">L</span>
+        <span style="--c: 2">o</span>
+        <span style="--c: 3">a</span>
+        <span style="--c: 4">d</span>
+        <span style="--c: 5">i</span>
+        <span style="--c: 6">n</span>
+        <span style="--c: 7">g</span>
+        <span style="--c: 8">.</span>
+        <span style="--c: 9">.</span>
+        <span style="--c: 10">.</span>
       </div>
     </div>
     <script src="./js/jquery-3.6.1.min.js"></script>
@@ -597,12 +639,14 @@
       function scrollToTop() {
         window.scrollTo({
           top: 0,
-          behavior: 'smooth' // Optional: Smooth scrolling animation
+          behavior: "smooth", // Optional: Smooth scrolling animation
         });
       }
-    
+
       // Add click event listener to the button
-      document.getElementById('goButton').addEventListener('click', scrollToTop);
+      document
+        .getElementById("goButton")
+        .addEventListener("click", scrollToTop);
     </script>
     <script>
       document
@@ -635,7 +679,7 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
-        loop:true,
+        loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

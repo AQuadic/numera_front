@@ -7,6 +7,7 @@ body {
   padding: 0;
   background-color: rgba(239, 233, 221, 1);
   scroll-behavior: smooth;
+  
 }
 body {
   max-width: 100%;
@@ -309,27 +310,43 @@ body {
 
 #features {
   margin: 20px 0px 46px;
+  display: flex;
+  justify-content: center;
+  gap: 0px 20px;
+  flex-wrap: wrap;
 }
 
 #features .feature p {
   margin: 4px 0;
+  text-align: center;
 }
 #features .feature {
   box-sizing: border-box;
   text-align: right;
   width: 90%;
-  padding: 10px 100px 10px 0px;
+  padding: 20px 10px;
   margin-inline: auto;
   margin-block: 8px;
   border-radius: 10px;
   background-color: #192540;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  min-width: 220px;
+  flex: 1;
 }
-
+img.imgFillter {
+  width: 18px;
+  object-fit: contain;
+}
 #features .feature .feature-title {
   font-family: expofont;
   font-weight: 600;
   font-size: 20px;
   color: #ebaf29;
+  text-align: center;
 }
 #features .feature .feature-description {
   position: relative;
@@ -339,29 +356,6 @@ body {
   font-size: 16px;
 }
 
-#features .feature:nth-child(1)::before {
-  position: absolute;
-  transform: translate(20px, 5px);
-  width: 40px;
-  height: 46px;
-  content: url("./images/trophy.svg");
-}
-
-#features .feature:nth-child(2)::before {
-  position: absolute;
-  transform: translate(20px, 15px);
-  width: 48px;
-  height: 48px;
-  content: url("./images/verified.svg");
-}
-
-#features .feature:nth-child(3)::before {
-  position: absolute;
-  transform: translate(20px, 2.5px);
-  width: 49px;
-  height: 49px;
-  content: url("./images/call-center.svg");
-}
 @media (max-width: 440px) {
   .add_carnum .add {
     font-size: 16px;
@@ -560,9 +554,10 @@ body {
 }
 /*contactUs*/
 .contactUs {
-  margin-top: 124px;
   direction: rtl;
-  max-width: 96%;
+  width: 96%;
+  max-width: 600px;
+  margin: 120px auto 20px; 
 }
 .contactUs h1 {
   font-size: 24px;
@@ -1065,6 +1060,7 @@ select option {
 }
 .successBox.false {
   opacity: 0 !important;
+  display: none;
 }
 .successBox .content {
   display: flex;
@@ -1349,6 +1345,7 @@ select option {
   gap: 8px;
 }
 .flaps .allFlaps .flap .part {
+  flex: 1;
   width: 86px;
 }
 .flaps .allFlaps .flap .part.code {
@@ -1380,6 +1377,7 @@ select option {
   font-weight: 600;
   outline: none;
   padding: 0px 6px;
+  width: 100%;
 }
 .flaps .allFlaps .flap .part input::placeholder {
   font-family: expofont;
@@ -1532,8 +1530,8 @@ select option {
   position: relative;
   width: 430px;
   height: 480px;
-  margin-bottom: 26px;
   direction: rtl;
+  margin: 0px auto 26px;
 }
 .shap .imgShap {
   position: relative;

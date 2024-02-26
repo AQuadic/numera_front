@@ -132,10 +132,7 @@
   .navbar-toggler.collapsed .toggler-icon {
     background-color: #1b2541;
   }
-.navbar .container{
-    margin: 0 auto;
-    max-width: 430px;
-}
+
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
