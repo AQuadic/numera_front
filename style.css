@@ -786,13 +786,13 @@ select option {
 }
 /*sliderImgs*/
 .sliderImgs {
-  width: 388px;
+  width: 100%;
   margin: auto;
 }
 .sliderImgs .swiper-horizontal {
   touch-action: pan-y;
-  width: 388px;
-  height: 220px;
+  width: 100%;
+  height: auto;
 }
 .sliderImgs .swiper-pagination {
   top: 90%;
