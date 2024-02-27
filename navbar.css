@@ -140,12 +140,13 @@
   }
 
 .navbar-collapse {
-
+align-items: center;
 }
 
 .navbar ul {
     padding: 20px 30px;
-    gap: 26px;
+    gap: 18px;
+    align-items: center;
 }
 .navbar ul li{}
 .navbar ul li a{
@@ -160,10 +161,15 @@
 .navbar ul li a:hover{
 color: #e5ae08;
 }
+.navbar ul li a.btnPage1{
+  color: #e5ae08;
+  padding: 4px 8px;
+  background-color: #192540de;
+}
   @media (max-width: 992px){
    
     .navbar ul {
-     
+     align-items: flex-start;
       gap: 10px;
   }
 

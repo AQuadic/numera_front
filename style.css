@@ -1514,6 +1514,56 @@ select option {
 .stepTwo .colors button.active {
   border: 2px solid black;
 }
+.btnPage1{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 38px;
+  width: 100%;
+  background-color: #192540;
+  border-radius: 6px;
+  color: #ebaf29;
+  font-size: 16px;
+  margin: 0;
+  font-family: expofont;
+  border: none;
+  max-width: 400px ;
+  margin: auto;
+  text-decoration: none;
+}
+.btnPage1:hover{
+  color: #ebaf29;
+
+}
+.btnPage2{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 38px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 6px;
+  color: #192540;
+  font-size: 16px;
+  margin: 0;
+  font-family: expofont;
+  border: none;
+  border: 1px solid #192540;
+  max-width: 400px ;
+margin: 10px auto;
+text-decoration: none;
+}
+.btnPage2:hover{
+  color: #192540;
+
+}
+.stepTwo .btnPage2{
+  margin-bottom: 22px;
+}
 .stepTwo .upLoadImg {
   position: relative;
   display: flex;
@@ -1770,4 +1820,159 @@ select option {
   20% {
     transform: translateY(-20px);
   }
+}
+/*empty*/
+.pageNum{
+  min-height: 60vh;
+}
+.pageNum1{
+  margin: 30px auto;
+}
+.empty{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  gap: 30px;
+  margin: 50px auto;
+}
+.empty .empty-img{
+  max-width: 100%;
+}
+.empty .title{
+  font-family: expofontBold;
+  font-size: 24px;
+  color: #192540;
+  text-align: center;
+}
+.dateNumber{}
+.dateNumber .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dateNumber .content .date{}
+.dateNumber .content .date h2{
+  font-size: 14px;
+  font-family: expofont;
+  margin-bottom: 2px;
+}
+.dateNumber .content .date p{
+  font-family: expofont;
+  font-size: 16px;
+}
+.dateNumber .content .btnPage1{
+  width: 140px;
+  text-decoration: none;
+  margin: 0;
+}
+.dateNumber .content .btnPage1:hover{
+  color: #e0aa0a;
+}
+/*login*/
+.login{
+  margin: 60px auto 20px;
+  min-height: 54vh;
+}
+.login h1{
+  text-align: center;
+}
+.login form{}
+.login form label{
+  font-family: expofont;
+font-size: 16px;
+}
+.login form input{
+  height: 40px;
+  font-size: 18px;
+}
+.login form .btnPage1{
+  height: 56px;
+  max-width: 380px;
+  color: white;
+  font-size: 16px;
+  font-family: expofont;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+.login form .btnPage2{
+  height: 56px;
+  max-width: 380px;
+  border: none;
+}
+.login input::placeholder{
+  font-size: 14px;
+  font-family: expofont;
+
+}
+.login form .passcode-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 14px;
+  margin: 0px auto 20px;
+  direction: ltr;
+}
+.login form .passcode-wrapper input {
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 0px;
+  border: 1px solid #C1C1C1;
+  border-radius: 5px;
+}
+.login.otp h3{
+  font-size: 14px;
+  font-family: expofont;
+  font-weight: 400;
+  text-align: center;
+color: #192540;
+}
+/*pageMyArts*/
+.pageMyArts{
+  margin: 50px auto;
+}
+.pageMyArts .infoUser{}
+.pageMyArts .infoUser h2{
+  font-size: 18px;
+  font-family: expofontBold;
+margin-bottom: 8px;
+text-align: center;
+}
+.pageMyArts .infoUser h3{
+  font-size: 16px;
+  font-family: expofont;
+text-align: center;
+margin-bottom: 20px;
+direction: ltr;
+
+}
+html[dir=ltr] .pageMyArts .infoUser h3{
+
+}
+.pageMyArts .btnProfile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:  10px 20px;
+  flex-wrap: wrap;
+  margin: 10px 0px 27px;
+}
+.pageMyArts .infoUser .btnPage1 ,.pageMyArts .infoUser .btnPage2 {
+  text-decoration: none;
+  max-width: 151px;
+  margin: 0;
+}
+
+.pageMyArts h4{
+  font-size: 18px;
+  font-family: expofontBold;
+
+margin-bottom: 10px;
+}
+.pageMyArts .sectionCars{
+  margin-top: 0;
+ 
 }
