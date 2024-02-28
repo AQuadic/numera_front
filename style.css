@@ -1848,11 +1848,18 @@ text-decoration: none;
 }
 .dateNumber{}
 .dateNumber .content{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
 }
-.dateNumber .content .date{}
+.dateNumber .content .date{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.dateNumber .content .date .dateEdit{
+  display: none;
+}
 .dateNumber .content .date h2{
   font-size: 14px;
   font-family: expofont;
@@ -1976,4 +1983,31 @@ margin-bottom: 10px;
 .pageMyArts .sectionCars{
   margin-top: 0;
  
+}
+/*userInfo*/
+.userInfo{
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.userInfo img{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userInfo .detailsUser{
+ 
+
+}
+.userInfo .detailsUser h3{
+  font-size: 12px;
+  font-family: expofont;
+margin-bottom: 2px;
+}
+.userInfo .detailsUser h4{
+  font-size: 12px;
+  font-family: expofontBold;
+margin: 0;
 }
