@@ -946,13 +946,13 @@ select option {
   position: absolute;
   left: 20px;
 }
-.cars .cardNew .contactCar {
+ .contactCar {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 14px;
 }
-.cars .cardNew .contactCar a {
+ .contactCar a {
   padding: 6px 10px;
   border-radius: 8px;
   background-color: rgba(25, 37, 64, 1);
@@ -963,13 +963,13 @@ select option {
   flex: 1;
   text-decoration: none;
 }
-.cars .cardNew .contactCar a p {
+ .contactCar a p {
   color: white;
   font-size: 16px;
   font-family: expofont;
   margin: 0;
 }
-.cars .cardNew .contactCar a img {
+ .contactCar a img {
 }
 .cars .cardNew .carDetails .star {
   display: none;
@@ -1033,24 +1033,24 @@ select option {
     height: 18px;
   }
 
-  .cars .cardNew .contactCar {
+ .contactCar {
     gap: 6px;
   }
-  .cars .cardNew .contactCar a {
+ .contactCar a {
     padding: 6px 8px;
   }
-  .cars .cardNew .contactCar a p {
+ .contactCar a p {
     font-size: 10px;
   }
-  .cars .cardNew .contactCar a img {
+ .contactCar a img {
     height: 14px;
   }
 }
 @media (max-width: 440px) {
-  .cars .cardNew .contactCar a p {
+ .contactCar a p {
     font-size: 8px;
   }
-  .cars .cardNew .contactCar a img {
+.contactCar a img {
     height: 12px;
   }
   .cars .cardNew .carDetails {
@@ -1258,13 +1258,13 @@ select option {
   left: 20px;
   display: none;
 }
-.carsNew .cardNew .contactCar {
+ .contactCar {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
 }
-.carsNew .cardNew .contactCar a {
+ .contactCar a {
   padding: 6px 8px;
   border-radius: 4px;
   background-color: rgba(25, 37, 64, 1);
@@ -1275,13 +1275,13 @@ select option {
   flex: 1;
   text-decoration: none;
 }
-.carsNew .cardNew .contactCar a p {
+ .contactCar a p {
   color: white;
   font-size: 10px;
   font-family: expofont;
   margin: 0;
 }
-.carsNew .cardNew .contactCar a img {
+ .contactCar a img {
   height: 14px;
   width: auto;
 }
@@ -1835,7 +1835,7 @@ text-decoration: none;
   align-items: center;
   justify-content:center;
   gap: 30px;
-  margin: 50px auto;
+  margin: 50px auto; 
 }
 .empty .empty-img{
   max-width: 100%;
@@ -2011,3 +2011,22 @@ margin-bottom: 2px;
   font-family: expofontBold;
 margin: 0;
 }
+.dateNumber .contactCar{
+  margin-top: 30px;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.dateNumber .contactCar a {
+  max-width: 190px;
+  height: 48px;
+
+ }
+ .dateNumber .contactCar a p{
+  font-size: 16px;
+  font-family: expofontBold;
+
+ }
+ .dateNumber .contactCar a img{
+  width: 20px;
+  height: auto;
+ }
