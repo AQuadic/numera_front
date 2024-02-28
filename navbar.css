@@ -142,7 +142,11 @@
 .navbar-collapse {
 align-items: center;
 }
-
+.navbar-toggler2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .navbar ul {
     padding: 20px 30px;
     gap: 18px;
