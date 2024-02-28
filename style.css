@@ -1857,13 +1857,30 @@ text-decoration: none;
     gap: 10px;
     flex-wrap: wrap;
 }
-.dateNumber .content .date .dateEdit{
-  display: none;
+.dateNumber .content .date .craete{}
+.dateNumber .content .date .craete p{
+  font-size: 16px;
+  font-family: expofontBold;
+
+}
+.dateNumber .content .date .sattecard{}
+.dateNumber .content .date .sattecard .stateCar{
+  background-color: #EBAF29;
+ 
+  border-radius: 4px;
+  font-family: expofontBold;
+font-size: 12px;
+width: 54px;
+height: 20px;
+text-align: center;
+margin: 0 auto;
 }
 .dateNumber .content .date h2{
   font-size: 14px;
   font-family: expofont;
   margin-bottom: 2px;
+  color: #87837D;
+ 
 }
 .dateNumber .content .date p{
   font-family: expofont;
@@ -1990,6 +2007,7 @@ margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-bottom: 10px;
 }
 .userInfo img{
   width: 36px;
@@ -2029,4 +2047,7 @@ margin: 0;
  .dateNumber .contactCar a img{
   width: 20px;
   height: auto;
+ }
+ .dateNumber .date2 p{
+  font-size: 12px !important;
  }
