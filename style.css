@@ -922,6 +922,7 @@ select option {
   font-family: expofont;
   line-height: 28px;
   word-spacing: 8px;
+  text-wrap: nowrap;
 }
 .cars .cardNew .carDetails .part .boldSpan {
   font-family: expofontBold;
@@ -980,7 +981,7 @@ select option {
 }
 @media (max-width: 768px) {
   .cars {
-    gap: 26px 10px;
+    gap: 14px 10px;
   }
   .cars .cardNew {
     width: 306px;
