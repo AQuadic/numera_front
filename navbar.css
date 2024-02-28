@@ -142,6 +142,15 @@
 .navbar-collapse {
 align-items: center;
 }
+.acountImg{
+  width:36px ;
+  height: 36px;
+}
+.acountImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .navbar-toggler2 {
   display: flex;
   align-items: center;
