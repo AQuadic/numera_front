@@ -844,7 +844,7 @@ select option {
   flex-wrap: wrap;
 }
 .cars .cardNew {
-  padding: 8px 8px 14px;
+  padding: 8px 8px 8px;
   background-color: white;
   border-radius: 14px;
   min-width: 360px;
@@ -987,7 +987,7 @@ select option {
     width: 306px;
     flex: 1;
     min-width: 184px;
-    padding: 4px 4px 14px;
+    padding: 4px 4px 8px;
     border-radius: 8px;
   }
 
@@ -2050,4 +2050,29 @@ margin: 0;
  }
  .dateNumber .date2 p{
   font-size: 12px !important;
+ }
+ .sold{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C82D24;
+  padding: 6px 12px;
+  width: 100%;
+  max-width: 400px;
+  margin: 2px auto;
+  border-radius: 4px;
+  min-height: 22px;
+ }
+ .sold p{
+  color: white;
+  font-size: 10px;
+  font-family: expofontBold;
+margin: 0;
+ }
+ .sold2{
+  height: 48px;
+
+ }
+ .sold2 p{
+  font-size: 16px;
  }
