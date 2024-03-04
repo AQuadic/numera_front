@@ -2076,3 +2076,80 @@ margin: 0;
  .sold2 p{
   font-size: 16px;
  }
+ /*pop*/
+ .popLogin {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #80807f8a;
+  transition: 0.5s;
+  opacity: 1;
+
+}
+.popLogin.false {
+  opacity: 0 !important;
+  display: none;
+}
+.popLogin .content {
+  width: 400px;
+  padding: 32px;
+  max-width: 100%;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #EFE9DD;
+}
+.popLogin .content img {
+  width: 140px;
+  height: 70px;
+  margin: 0px auto 22px ;
+}
+.popLogin .content h2 {
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+margin-bottom: 12px;
+  font-family: expofont;
+  color: #192540;
+}
+.popLogin .content h3{
+  font-size: 44px;
+  font-weight: 800;
+  font-family: expofontBold;
+line-height: 120%;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #192540;
+
+}
+.popLogin .content p {
+  font-family: expofont;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.popLogin .content a {
+  background: rgba(25, 37, 64, 1);
+  width: 290px;
+  padding: 10px;
+  max-width: 230px;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  font-family: expofontBold;
+  text-decoration: none;
+  display: block;
+  margin:  8px auto;
+}
+.popLogin .content a.btn2 {
+  background-color: transparent;
+  color: #192540;
+  border: 1px solid;
+}
