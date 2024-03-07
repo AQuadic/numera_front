@@ -2153,3 +2153,47 @@ line-height: 120%;
   color: #192540;
   border: 1px solid;
 }
+
+
+.successBox .boxBtnPop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.successBox .boxBtnPop .link1{
+  max-width: 164px;
+  height: 56px;
+  font-family: expofontBold;
+  
+}
+.successBox .boxBtnPop .link2{
+  max-width: 164px;
+  height: 56px;
+  font-family: expofontBold;
+  color: #192540;
+  border: 1px solid;
+  background-color: transparent;
+}
+.successBox2  .content h2{
+  font-family: expofont;
+font-size: 24px;
+margin-bottom: 12px;
+font-weight: 300;
+}
+.successBox2 .content{
+  gap: 0px;
+  max-width: 94%;
+}
+.successBox2 .content  p{
+  margin-bottom: 40px;
+ 
+}
+.successBox2  .content img{
+  margin-bottom: 2px;
+  max-width: 244px;
+  height: 244px;
+  border-radius: 50%;
+}
