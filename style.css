@@ -832,6 +832,7 @@ select option {
   .sliderImgs .swiper-horizontal {
     width: 100%;
   }
+
 }
 /*cars*/
 .cars {
@@ -1045,6 +1046,7 @@ select option {
  .contactCar a img {
     height: 14px;
   }
+
 }
 @media (max-width: 440px) {
  .contactCar a p {
@@ -1055,7 +1057,9 @@ select option {
   }
   .cars .cardNew .carDetails {
     margin: 8px 0px 8px;
+    gap: 12px;
   }
+
 }
 .swiper-pagination-bullet {
   background: #1b2541;
@@ -1284,6 +1288,16 @@ select option {
  .contactCar a img {
   height: 14px;
   width: auto;
+}
+@media (max-width: 440px) {
+  .contactCar a {
+    padding: 6px 4px;
+    gap: 4px;
+}
+.contactCar a img {
+  height: 12px;
+  width: auto;
+}
 }
 /*con*/
 .con {
