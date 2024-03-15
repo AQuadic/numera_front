@@ -2211,3 +2211,102 @@ font-weight: 300;
   height: 244px;
   border-radius: 50%;
 }
+
+/*active acount*/
+
+
+.activeAcount {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 66vh;
+  padding: 40px 0px;
+}
+
+.activeAcount .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+  align-items: center;
+  width: 400px;
+  max-width: 100%;
+
+}
+.activeAcount .content img {
+  margin-bottom: 2px;
+    max-width: 244px;
+    height: 244px;
+    border-radius: 50%;
+    width: 100%;
+    object-fit: contain;
+}
+.activeAcount .content h2 {
+  font-size: 28px;
+  font-weight: 800;
+  font-family: expofontBold;
+
+  text-align: center;
+  margin: 0;
+}
+.activeAcount .content p {
+  font-family: expofont;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.activeAcount .content a {
+  background: rgba(25, 37, 64, 1);
+  width: 290px;
+  padding: 18px;
+  max-width: 94%;
+  border-radius: 4px;
+  color: rgba(243, 190, 70, 1);
+  font-size: 16px;
+  font-family: expofont;
+  text-decoration: none;
+  text-align: center;
+}
+.activeAcount .boxBtnPop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.activeAcount .boxBtnPop .link1{
+  max-width: 164px;
+  height: 56px;
+  font-family: expofontBold;
+  
+}
+.activeAcount .boxBtnPop .link2{
+  max-width: 164px;
+  height: 56px;
+  font-family: expofontBold;
+  color: #192540;
+  border: 1px solid;
+  background-color: white;
+}
+.activeAcount  .content h2{
+  font-family: expofont;
+font-size: 24px;
+margin-bottom: 12px;
+font-weight: 300;
+}
+.activeAcount .content{
+  gap: 0px;
+  max-width: 94%;
+}
+.activeAcount .content  p{
+  margin-bottom: 24px;
+ 
+}
+.activeAcount  .content img{
+  margin-bottom: 2px;
+  max-width: 244px;
+  height: 244px;
+  border-radius: 50%;
+}
